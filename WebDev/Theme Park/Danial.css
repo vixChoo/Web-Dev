@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Grotesk";
+    src: url("GroteskPro.woff") format('woff');
+}
+
+@font-face {
+    font-family: "SFPro";
+    src: url("SFPro.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "SFProRegular";
+    src: url("SFProRegular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "SFProText";
+    src: url("SFProText.woff2") format('woff2');
+}
+
+@keyframes animatetop{from{top:-20px;opacity:0} to{top:0;opacity:1}}
+
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+
+.Headers{
+  font-family: "SFPro";
+  position: relative;
+  animation:animatetop 1s;
+  font-size: 50px;
+    }
+
+.BodyText{
+      font-family: "SFProText";
+      position: relative;
+      text-align: center;
+      animation:animatetop 1.4s;
+      font-size: 30px;
+    }
+
+    ul {
+      font-family: "Grotesk";
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+
+    li {
+      font-family: "Grotesk";
+      float: left;
+    }
+
+    li a {
+      font-family: "Grotesk";
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.5s;
+    }
+
+    li a:hover {
+      font-family: "Grotesk";
+      background-color: #111;
+    }
+    .imgheader{
+      padding-top: 15px;
+      width:60%;
+      position: left;
+    }
+    .img-logo{
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-bottom: 4px;
+      width: 50%;
+      transition: 0.5s;
+    }
+    .img-logo:hover {
+      margin-left: 30px;
+      transition: 0.7s;
+    }
+    .logo-image{
+      width: 50%;
+      overflow: hidden;
+      margin-top: 5px;
+      margin-left: 13px;
+    }
+
+    h1{
+      text-align: center;
+    }

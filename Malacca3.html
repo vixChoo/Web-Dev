@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Malacca</title>
+  </head>
+  <style media="screen">
+  *{
+    box-sizing: border-box;
+  }
+    .parallax
+  {
+    background-image: url("Slider.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text
+  {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  .details
+  {
+    padding: 50px;
+    width:absolute;
+    margin: 10px;
+    font-size: 25px;
+
+  }
+  .details h3
+  {
+    padding:10px;
+    font-family: Helvetica;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .details p
+  {
+    font-size:20px;
+    text-align:justify;
+    font-family: sans-serif;
+    padding-right:20px;
+    padding-left: 500px;
+
+  }
+.box
+{
+  position: relative;
+  padding-bottom: 20px;
+  display:block;
+  width: 100%;
+  height: 470px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+.box:hover
+{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.btn
+{
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 16px;
+  width:150px;
+  height:60px;
+  border-radius: 80px;
+  line-height: 60px;
+  text-align: center;
+  border: 3px solid #009688;
+  display: block;
+  text-decoration: none;
+  margin:0;
+  color: #009688;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+  left:50px;
+
+}
+.btn:before
+{
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  opacity: .5;
+  top:-100%;
+  left:0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn:after
+{
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  top:-100%;
+  left:0;
+  z-index: -1;
+  transition: .3s;
+  transition-delay: .2s;
+}
+.btn:hover
+{
+  color: #fff;
+}
+.btn:hover:before
+{
+  top:0;
+}
+.btn:hover:after
+{
+  top:0;
+}
+.hover-img1 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(jonker.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img1:hover{
+background:url(jonker2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img2 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(church.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+
+}
+.hover-img2:hover{
+background:url(church2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img3 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(butterflyreptile.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img3:hover{
+background:url(butterflyreptile2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img4 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(palace.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img4:hover{
+background:url(palace2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img5 {
+position: relative;
+float:left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(river.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img5:hover{
+background:url(river2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.video
+{
+  position: relative;
+  width:100%;
+  padding-top: 20px;
+  padding-bottom: 325px;
+  height:0;
+  text-align: center;
+}
+.iframe2
+{
+  float: right;
+}
+.container {
+  height:100px;
+  display: flex;
+  /*flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  float: left;
+}
+
+.heart {
+  background-image: url(https://abs.twimg.com/a/1474649078/img/animations/web_heart_animation.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+  .heart:active {
+      animation: heartAnim .8s infinite steps(28) forwards;
+
+  }
+
+  .heart:hover {
+      background-position: right top;
+  }
+  .heart::after{
+    color:red;
+
+
+
+  }
+
+@keyframes heartAnim {
+  from {
+      background-position: left top;
+  }
+  to {
+      background-position: right top;
+  }
+}
+  </style>
+  <body>
+    <div class="parallax">
+      <div class="text">
+        <h1 style="font-family:Helvetica;">
+          Malacca
+        </h1>
+          <h5 style="font-family:arial;font-weight:normal;font-size:15px;">
+            Malacca is the historical state of Malaysia, rich with heritage buildings, ancient landmarks and colonial structures. It was here that colonial forces first made contact with Malaysia, which eventually shaped the country into its current economic and political system. Today, in Malacca, you can still see the imprints of British, Dutch and Portuguese forces left behind in forts, museums, churches and towers.
+          </h5>
+      </div>
+    </div>
+  <div class="video">
+      <iframe class="iframe1" width="560" height="315" src="Melaka, Malaysia Travel Guide - Must-See Attractions.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <h2><i>Melaka, Malaysia Travel Guide - Must-See Attractions</i> Credit: BookingHunterTV</h2>
+  </div>
+  <br>
+  <br>
+  <div class="details">
+  <div class="box">
+    <div class="hover-img1">
+    </div>
+  <h3>Jonker Street</h3>
+  <p>
+    Jonker Walk is best visited during the weekends as it is a commonly acknowledged fact that visitors worldwide flock to this particular street in Malacca for its vibrant night market. Well-organized with a wide array of stalls, polite and friendly hawkers, ubiquitous bargains as well as live music coursing throughout the area, Jonker Walk comes to life in full colour with a lively street party-like atmosphere.
+  </p>
+  <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.88952803855!2d102.24422111475526!3d2.195492348399721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1db7fdc12a1%3A0xca21d5dee8e1fbd4!2sJonker%20Street%20Night%20Market!5e0!3m2!1sen!2smy!4v1570587596121!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+  </iframe>
+  <p>
+    Working Hours: Fridays, and Weekends: 6pm-12am
+  </p>
+  <div class="container">
+  <span class="heart"></span>
+  </div>
+  <br>
+    <a href="https://www.gomelaka.my/jonker-street/" class="btn" target="_blank">Read More</a>
+    </div>
+    <br>
+  <div class="box">
+    <div class="hover-img2">
+    </div>
+    <h3>Christ Church</h3>
+    <p>
+      Christ Church was built by the Dutch when they took possession of Malacca from the Portuguese and today, it stands as one of Malacca’s most defining structures. Situated along Jalan Gereja (also known as Church Street), it is an instantly recognisable brick-red building with a huge white cross at the top.
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.892663722173!2d102.24728331457392!3d2.194316598400584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1de7bf0598d%3A0x6499539b7a015fad!2sChrist%20Church%20Melaka%2C%20Bandar%20Hilir.!5e0!3m2!1sen!2smy!4v1570587730769!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Sundays: 8:30am-1pm
+      Every Other Day: 9am-4:30pm
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+    <a href="http://www.malacca.ws/attractions/christ-church-malacca.htm" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+    <div class="box">
+      <div class="hover-img3">
+      </div>
+    <h3>Butterfly & Reptile Sanctuary</h3>
+    <p>
+      Situated approximately 15 kilometres northeast of Malacca town, the Butterfly & Reptile Sanctuary is one of the most visited attractions in Ayer Keroh.It is home to a collection of animals ranging from beautiful butterflies to more than 20 species of snakes as well as lizards, crocodiles, colourful koi fish, not to mention a few prickly hedgehogs.
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.605033749656!2d102.3091003145742!3d2.299666998323943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1e445297aabbb%3A0x54914d5fa3ef202!2sMelaka%20Butterfly%20%26%20Reptile%20Sanctuary%20(Taman%20Rama-rama%20%26%20Reptilia%20Melaka)!5e0!3m2!1sen!2smy!4v1570587994791!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours:8:30am-5:30pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+      <a href="https://www.butterflyreptile.com/" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+  <div class="box">
+    <div class="hover-img4">
+    </div>
+    <h3>Sultanate Palace</h3>
+    <p>
+      Melaka Sultanate Palace is a wooden replica of Sultan Mansur Shah’s 15th-century palace. Set at the base of St. Paul’s Hill it was painstakingly constructed in 1985 using traditional construction techniques and materials, based on accounts in the 16th century, Sejarah Melayu (Malay Annals) text.
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8967808305974!2d102.24832121457389!3d2.192771898401688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1de180e040f%3A0xf496244070c56ba7!2sMelaka%20Sultanate%20Palace%20Museum!5e0!3m2!1sen!2smy!4v1570588138482!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours: 8am-4:45pm
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+      <a href="https://www.wildlife.gov.my/index.php/en/public/2016-05-10-02-34-43/2016-05-10-02-42-10" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+  <div class="box">
+    <div class="hover-img5">
+
+    </div>
+    <h3>River Cruise</h3>
+    <p>
+      For a quick tour around the city at a leisurely pace, hop on the Melaka River Cruise. During the 45-minute ride, you will get to see the best bits of this historical city, offering sights such as the traditional Malay village Kampung Morten and the beautiful murals alongside Jonker Walk
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8582479593156!2d102.24959991457396!3d2.2071867983912092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1d42cfd64c3%3A0x943d54830f915457!2sRiver%20Cruise%20Taman%20Rempah%20Jetty!5e0!3m2!1sen!2smy!4v1570588236518!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours: 9am-11:30pm
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+      <a href="https://www.melakarivercruise.my/" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+</div>
+</div>
+  </body>
+</html>

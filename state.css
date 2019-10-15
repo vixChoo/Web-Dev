@@ -1,0 +1,28 @@
+@font-face {
+    font-family: League;
+    src: url('./images/LeagueSpartan-Bold.otf');
+  }
+@font-face {
+    font-family: "Grotesk";
+    src: url("GroteskPro.woff") format('woff');
+}
+
+@font-face {
+    font-family: "SFPro";
+    src: url("SFPro.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "SFProRegular";
+    src: url("SFProRegular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "SFProText";
+    src: url("SFProText.woff2") format('woff2');
+}
+
+body{
+    font-family: "SFProText";
+    line-height: 1.1;
+}

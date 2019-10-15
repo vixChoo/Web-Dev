@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Grotesk";
+    src: url("Grotesk.woff") format('woff');
+}
+
+.ThemePark{animation:opac 1.5s}
+
+@keyframes opac{from{opacity:0} to{opacity:1}}

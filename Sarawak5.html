@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarawak</title>
+  </head>
+  <style media="screen">
+
+  *{
+    box-sizing: border-box;
+  }
+    .parallax
+  {
+    background-image: url("Slider2.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text
+  {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  .details
+  {
+    padding: 50px;
+    width:absolute;
+    margin: 10px;
+    font-size: 25px;
+
+  }
+  .details h3
+  {
+    padding:10px;
+    font-family: Helvetica;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .details p
+  {
+    font-size:20px;
+    text-align:justify;
+    font-family: sans-serif;
+    padding-right:20px;
+    padding-left: 500px;
+
+  }
+.box
+{
+  position: relative;
+  padding-bottom: 20px;
+  display:block;
+  width: 100%;
+  height: 470px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+.box:hover
+{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.btn
+{
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 16px;
+  width:150px;
+  height:60px;
+  border-radius: 80px;
+  line-height: 60px;
+  text-align: center;
+  border: 3px solid #009688;
+  display: block;
+  text-decoration: none;
+  margin:0;
+  color: #009688;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+  left:50px;
+
+}
+.btn:before
+{
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  opacity: .5;
+  top:-100%;
+  left:0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn:after
+{
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  top:-100%;
+  left:0;
+  z-index: -1;
+  transition: .3s;
+  transition-delay: .2s;
+}
+.btn:hover
+{
+  color: #fff;
+}
+.btn:hover:before
+{
+  top:0;
+}
+.btn:hover:after
+{
+  top:0;
+}
+.hover-img1 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(NatureReserve.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img1:hover{
+background:url(NatureReserve2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img2 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(NationalPark.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+
+}
+.hover-img2:hover{
+background:url(NationalPark2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img3 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(NiahCaves3.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img3:hover{
+background:url(NiahCaves2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img4 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(MuluCaves.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img4:hover{
+background:url(MuluCaves2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img5 {
+position: relative;
+float:left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(CulturalVillage.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img5:hover{
+background:url(CulturalVillage2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.video
+{
+  position: relative;
+  width:100%;
+  padding-top: 20px;
+  padding-bottom: 325px;
+  height:0;
+  text-align: center;
+}
+.iframe2
+{
+  float: right;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #f5f8fa;
+    color: #292F33;
+    font-size: 12px;
+}
+
+  .container {
+    height:100px;
+    display: flex;
+    /*flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    float: left;
+}
+
+.heart {
+    background-image: url('https://abs.twimg.com/a/1474649078/img/animations/web_heart_animation.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 2900%;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+    .heart:active {
+        animation: heartAnim .8s infinite steps(28) forwards;
+
+    }
+
+    .heart:hover,
+    .heart:focus,
+    .heart:visited,
+    .heart::after{
+        background-position: right top;
+    }
+
+
+@keyframes heartAnim {
+    from {
+        background-position: left top;
+    }
+    to {
+        background-position: right top;
+    }
+}
+  </style>
+  <body>
+    <div class="parallax">
+      <div class="text">
+        <h1 style="font-family:Helvetica;">
+          Sarawak
+        </h1>
+          <h5 style="font-family:arial;font-weight:normal;font-size:15px;">
+            Revealing a side of Asia unlike anywhere else, Sarawak offers an alternative for those seeking humble authenticity far from the tourist-trap clichés.  Visiting Sarawak can be done as a complementary trip to Peninsular Malaysia and neighbouring countries, or a journey discovery all on its own. To discover Sarawak means taking the road less travelled.
+          </h5>
+      </div>
+    </div>
+  <div class="video">
+      <iframe class="iframe1" width="560" height="315" src="Sarawak... More To Discover.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <h2><i>Sarawak...More To Discover</i> Credit: Sarawak Tourism Brand</h2>
+  </div>
+  <br>
+  <br>
+  <div class="details">
+  <div class="box">
+    <div class="hover-img1">
+    </div>
+  <h3>Semenggoh Nature Reserve</h3>
+  <p>
+    Just 20 kilometres south of Kuching, the reserve has its own rare flora and fauna including the giant squirrel, pigmy squirrel and splendid variety of birds. In the morning, you can hear the howling of gibbons, which, like the orang utans, have been rehabilitated and released in the forest.  Trekking trails make Semenggoh an ideal place for exercisers, wildlife photographers and nature lovers.
+  </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.497797834254!2d110.3144962!3d1.4016855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d53de6386e70ad7!2sSemenggoh%20Nature%20Reserve%2C%20Siburan%2C%20Sarawak.!5e0!3m2!1sen!2smy!4v1570517489334!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+  <p>
+  Working Hours:
+  Morning:8am-10am
+  Afternoon:2pm-4pm.
+  </p>
+  <div class="container">
+  <span class="heart"></span>
+  </div>
+  <br>
+  <br>
+    <a href="https://semenggoh.my/" class="btn" target="_blank">Read More</a>
+
+    </div>
+    <br>
+  <div class="box">
+    <div class="hover-img2">
+    </div>
+    <h3>Bako National Park</h3>
+    <p>
+      A National Park since 1957, Bako offers the perfect introduction to Sarawak’s forests and wildlife.  The park covers the northern tip of the Muara Tebas peninsula, an area of 27 sq km.  Despite its seemingly small size, Bako contains a wide range of vegetation – swamp forest, scrub-like padang vegetation, mangrove forest, dipterocarp forest, delicate cliff vegetation and more.  In fact, at Bako it is possible to see almost every type of vegetation found in Borneo.
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.0276430117015!2d110.46447801426564!3d1.7166666987482566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fa532cb6e56807%3A0x5abbf314c5effda6!2sBako%20National%20Park!5e0!3m2!1sen!2smy!4v1570524995950!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours: 8am-5pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+    <br>
+    <a href="https://www.sarawakforestry.com/" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+    <div class="box">
+      <div class="hover-img3">
+
+      </div>
+    <h3>Niah Caves</h3>
+    <p>
+      Niah Great Cave is alive with 40,000 years of unwritten history, because it was inhabited by humans at at least 40 millennia ago. The caves are the site of some of the oldest human remains discovered in Southeast Asia.  You will not be the only visitor to this magnificent cave. It is the haunt of local Penan tribesmen, who make a living collecting edible birds nests built high in the cave walls by swiftlets. The birds’ nests are prized by Chinese gourmets around the world.
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.934362882758!2d113.75980411436137!3d3.8242380972180894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x321ec206af7cb5d1%3A0xdf76b59fb36292d3!2sGua%20Niah%20(Niah%20Caves)%20Entrance%2C%20Niah%2C%20Sarawak.!5e0!3m2!1sen!2smy!4v1570525099015!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours:8am-5pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+    <br>
+      <a href="https://www.sarawakforestry.com/parks-and-reserves/niah-national-park/" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+  <div class="box">
+    <div class="hover-img4">
+    </div>
+    <h3>Mulu Caves</h3>
+    <p>
+      The bio-diverse tropical rainforest is stunning in itself. The almost 6m of annual rainfall that maintains the forest has the dual function of activating the strong dissolution processes, thus shaping the Mulu underground into a gigantic ‘Swiss cheese’ of exquisite beauty  and mystery.
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509485.6339151134!2d114.05975752516787!3d3.9466984027957555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3218fe9cf9c2f1bf%3A0x8f32e554e078f1b2!2sMulu%20National%20Park!5e0!3m2!1sen!2smy!4v1570525150524!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours: 8am-5pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+    <br>
+      <a href="https://mulupark.com/" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+  <div class="box">
+    <div class="hover-img5">
+
+    </div>
+    <h3>Cultural Village</h3>
+    <p>
+      Sarawak Cultural Village is an award-winning Living Museum that spans across 17-acres of land just across from Damai Beach Resort and Hotels. Experience Sarawak in Half-a-day at Sarawak Cultural Village and learn about the local culture and lifestyles of the various ethnic groups in Sarawak.
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.9590662142436!2d110.31427151435588!3d1.7492315987245373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31faff9c78be2e59%3A0x8b3ff59aed592453!2sSarawak%20Cultural%20Village!5e0!3m2!1sen!2smy!4v1570525199675!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+  </iframe>
+    <p>
+      Working Hours: 9am-5pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+    <br>
+      <a href="https://scv.com.my/" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+</div>
+</div>
+<script type="text/javascript">
+document
+    .querySelector('.heart')
+    .addEventListener('click', ($event) => {
+        $event.target.classList.toggle('on');
+    })
+</script>
+  </body>
+</html>

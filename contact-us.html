@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us </title>
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="vix.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="loader">
+            <img src="./images/flag.gif" alt="Loading...">
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,32 +47,209 @@
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="cs-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
     </nav>
-    <div class="loader">
-        <img src="./images/flag-for-malaysia_1f1f2-1f1fe.gif" alt="Loading...">
-    </div>
-    <div class="row mt-lg">
-        <div class="col-lg-7 img-container">
-            <img src="./images/about-malaysia.jpg" alt="about-malaysia" class="img-rounded">
-        </div>
-        <div class="col-lg-3 side">
-            <div class="grid">
-                    <figure class="effect-circle">
-                        <img src="https://i.pinimg.com/564x/af/df/0e/afdf0e7f6d19cef5a2d2d0500d4d6da5.jpg" alt="img12"/>
-                        <figcaption>
-                            <h2>Contact &nbsp;<span> US</span></h2>
-                            <p>Let Us Know More About You</p>
-                            <a href="#">View more</a>
-                        </figcaption>			
-                    </figure>
-            </div>
-        </div>
+
+    <div class="container-fluid main-fluid" >
+        <h1 class="p-3 pl-5 pr-5 main-title">Fly Malaysia</h1>
     </div>
 
+        <div class="row">
+            <div class="col-lg-6 p-lg-0 p-3 slideCol">
+                <div class="slideshow-contactUs">
+                    <div class="cs-slide fade">
+                        <img src="./images/malaysia.jpg" alt="about-malaysia" style="width:100%"  onclick="openModal();csCurrentSlide(1)">
+                      </div>
+                    
+                      <div class="cs-slide fade">
+                        <img src="./images/tioman.jpg" alt="about-tioman.jpg" style="width:100%"  onclick="openModal();csCurrentSlide(2)">
+                      </div>
+                    
+                      <div class="cs-slide fade">
+                        <img src="./images/cameron.jpg" alt="about-cameron" style="width:100%"  onclick="openModal();csCurrentSlide(3)">
+                      </div>
+
+                      <a class="cs-prev" onclick="csSlide(-1)"><img src="./images/back-cs.svg" alt="prev"></a>
+                      <a class="cs-next" onclick="csSlide(1)"><img src="./images/next-cs.svg" alt="next"></a>
+                </div>
+            </div>
+
+            <div class="verticalDot">
+                <span class="cs-dot" onclick="csCurrentSlide(1)"></span> 
+                <span class="cs-dot" onclick="csCurrentSlide(2)"></span> 
+                <span class="cs-dot" onclick="csCurrentSlide(3)"></span> 
+            </div>
+
+            <div class="slideTxt">
+                <div class="cs-txt fade">
+                    Kuala Lumpur’s dynamic, high-rise City Centre is known for upscale fashion malls, luxury hotels and expansive views from the futuristic Petronas Twin Towers. Overlooked by skyscrapers, the green expanse of the Kuala Lumpur City Center Park offers walking paths and musical fountains.
+                </div>
+                <div class="cs-txt fade">Tioman Island lies off the east coast of Peninsular Malaysia, in the South China Sea. It's a nature reserve, ringed by beaches. The area is known for its dive sites, which have corals, sea fans and sea sponges, as well as shipwrecks. The island is covered in tropical rainforests, home to butterflies, lizards and monkeys. On the east coast, the Juara Turtle Project is a hatchery that protects and studies sea turtles.</div>
+                <div class="cs-txt fade"> The Cameron Highlands is a district in Pahang, Malaysia occupying an area of 712.18 square kilometres. To the north, its boundary touches that of Kelantan; to the west, it shares part of its border with Perak.</div>
+            </div>
+        </div>
+      
+        <div class="container-fluid mid-sec">
+            <div class="col-lg-6 p-0 modalBar">
+                    <div class="side">
+                        <div class="grid">
+                            <figure class="effect-circle">
+                                <img src="https://i.pinimg.com/564x/af/df/0e/afdf0e7f6d19cef5a2d2d0500d4d6da5.jpg" alt="img12"/>
+                                <figcaption>
+                                        <h2>Contact &nbsp;<span> US</span></h2>
+                                        <p>Let Us Know More About You</p>
+                                        <a href="#" data-toggle="modal" data-target="#csModal">View more</a>
+                            </figure>
+                                </figcaption>			
+                        </div>
+                    </div>
+            </div>
+        </div>
+    <section class="bg-container">
+        <div class="bg-1">
+            <div class="container pt-lg-5 pt-3" >
+                    <div class="row pb-5">
+                        <hr width="30%" class="divider">
+                            <h3>Meet Our Team</h3>
+                        <hr width="30%" class="divider">
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>Vix</h3>
+                                </div>
+                                <div class="card-body p-3 border-red">
+                                    <p class="p-4">Sunway College Student</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                    <div class="card-header">
+                                        <h3>Daniel</h3>
+                                    </div>
+                                    <div class="card-body p-3 border-red">
+                                        <p class="p-4">Sunway College Student</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>Nada</h3>
+                                </div>
+                                <div class="card-body p-3 border-red">
+                                    <p class="p-4">Sunway College Student</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                    <div class="card-header">
+                                        <h3>Wei Ling</h3>
+                                    </div>
+                                    <div class="card-body p-3 border-red">
+                                        <p class="p-4">Sunway College Student</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>    
+
+   
+ 
+      <!-- Modal -->
+      <div class="modal fade" id="csModal" tabindex="-1" role="dialog" aria-labelledby="csModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="csModalLabel">Talk To Us</h3>
+                </div>
+                <div class="card">
+                    <form id="frmInfo" name="frmInfo" method="POST" action="mailto:19000561@imail.sunway.edu.my"> <!-- js easily detect name & id , post - backend -->
+                        <!-- post send details over whatever way -->
+                        <!-- get send details over url -->
+                        <table class="cs-table">
+                                <tr>
+                                    <th>
+                                        <label for="txtname">
+                                            Name
+                                        </label>
+                                    </th>
+                                    <td><input class="cs-input" type="text" id="txtname" name="txtname" placeholder="Eg. John" required tabindex="1"></td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="txtemail">
+                                            E-mail
+                                        </label>
+                                    </th>
+                                    <td><input class="cs-input" type="email" id="txtemail" name="txtemail" placeholder="abc@mail.com" required tabindex="2"></td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="txttitle">
+                                            Title
+                                        </label>
+                                    </th>
+                                    <td><input class="cs-input" type="text" id="txttitle" name="txttitle" placeholder="Subject" required tabindex="3"></td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="txtcomn">Content</label>
+                                    </th>
+                                    <td>
+                                            <textarea name="txtcomn" id="txtcomn" cols="32" rows="3" tabindex="4" placeholder="What would you like to tell us?"></textarea>
+                                    </td>
+                                </tr>
+                        </table>
+                        <button type="submit" class="cs-btn" value="Submit"> 
+                            Submit
+                        </button>
+                        <button type="reset" class="cs-btn" value="Reset">
+                            <img src="./images/retryBlk.svg" alt="Reset">
+                        </button>
+                        <button type="button" class="cs-btn" data-dismiss="modal" aria-label="Close" value="Close">
+                                <img src="./images/close.svg" alt="Reset">
+                        </button>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <!-- LightBox -->
+      <div id="lightbox" class="modal lightbox fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <a class="lightPrev" onclick="csSlide(-1)"><img src="./images/back-cs.svg" alt="prev"></a>
+            <a class="lightNext" onclick="csSlide(1)"><img src="./images/next-cs.svg" alt="next"></a>
+            <div class="modal-content">
+              <div class="lightboxSlide">
+                <div class="slideNum">1 / 3</div>
+                <img src="./images/malaysia.jpg" style="width:100%">
+              </div>
+          
+              <div class="lightboxSlide">
+                <div class="slideNum">2 / 3</div>
+                <img src="./images/tioman.jpg" style="width:100%">
+              </div>
+          
+              <div class="lightboxSlide">
+                <div class="slideNum">3 / 3</div>
+                <img src="./images/cameron.jpg" style="width:100%">
+              </div>
+              
+            </div>
+      </div>
+
+
+      
     <footer class="footer ">
         <div class="container-fluid pl-lg-5 pr-lg-3 pl-3">
             <div class="row">
@@ -75,7 +257,7 @@
                         <h4 class="text-uppercase top-bar">ABOUT</h4>
                     <ul class="nav pt-0">
                         <li>
-                           <a href="./about-malaysia.html" class="underline">About Malaysia</a>
+                           <a href="./about-malaysia.html" target="_blank"class="underline">About Malaysia</a>
                         </li>
                     </ul>
                 </div>
@@ -83,17 +265,17 @@
                     <h4 class="text-uppercase top-bar">States</h4>
                     <ul class="nav pt-0">
                         <li>
-                            <a href="./join-us.html" class="underline">
+                            <a href="./join-us.html" target="_blank"class="underline">
                                 Kuala Lumpur
                             </a>
                         </li>
                         <li>
-                            <a href="./corporate.html" class="underline">
+                            <a href="./corporate.html" target="_blank"class="underline">
                                 Penang
                             </a>
                         </li>
                         <li >
-                            <a href="./affiliate.html" class="underline">
+                            <a href="./affiliate.html" target="_blank"class="underline">
                                 Sarawak
                             </a>
                         </li>
@@ -103,17 +285,17 @@
                     <h4 class="text-uppercase top-bar" style="color: #f7f7f7;cursor: default">States</h4>
                     <ul class="nav pt-0">
                         <li>
-                            <a href="./join-us.html" class="underline">
+                            <a href="./join-us.html" target="_blank"class="underline">
                                 Sabah
                             </a>
                         </li>
                         <li>
-                            <a href="./corporate.html" class="underline">
+                            <a href="./corporate.html" target="_blank"class="underline">
                                 Penang
                             </a>
                         </li>
                         <li >
-                            <a href="./affiliate.html" class="underline">
+                            <a href="./affiliate.html" target="_blank"class="underline">
                                 Sarawak
                             </a>
                         </li>
@@ -122,19 +304,19 @@
                 <div class="col-md-2 mb-lg-0 mb-3">
                         <ol>
                             <li>
-                                <a href="https://instagram.com/" data-toggle="tooltip" title="Follow Us!">
+                                <a href="https://instagram.com/" data-toggle="tooltip" title="Follow Us!" target="_blank">
                                     <img src="images/insta.svg" alt="Instagram" width="35" >
                                     <span> Follow Us! </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://facebook.com/" data-toggle="tooltip" title="Check Us Out!">
+                                <a href="https://facebook.com/" data-toggle="tooltip" title="Check Us Out!" target="_blank">
                                     <img src="images/facebook.svg" alt="facebook" width="35" >
                                     <span> Check Us Out!</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" data-toggle="tooltip" title="Latest News!">
+                                <a href="https://twitter.com/" data-toggle="tooltip" title="Latest News!" target="_blank">
                                     <img src="images/twitter.svg" alt="twitter" width="35" >
                                     <span> Latest News!</span>
                                 </a>
@@ -151,9 +333,9 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js" ></script>
+    <script src="vix.js"></script>
         
     <script type="text/javascript">
         // window.addEventListener("load", function(){
@@ -164,7 +346,9 @@
         $(window).on("load", function(){
             $(".loader").fadeOut('slow');
         });
+        // executed the function to display the first picture.
+        showSlideNumber(slideIndex);
     </script>
   
 </body>
-</html>
+</html> 

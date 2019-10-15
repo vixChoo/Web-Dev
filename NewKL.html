@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Kuala Lumpur</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+    body,html {
+            height: 100%;
+            max-width: 100%;
+            }
+
+    * {
+    box-sizing: border-box;
+    }
+
+    h2{
+      border-bottom: 1px solid;
+    }
+
+    /*first image*/
+    .bg-image {
+    /* The image used */
+    background-image: url("KL images/KL.jpg");
+
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(3px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.2); /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 3px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 50%;
+      padding: 20px;
+      text-align: center;
+      font-style: italic;
+    }
+    /*|||||||||||||||||||*/
+
+    div{
+      padding:50px 100px;
+      width:auto;
+      background: honeydew;
+      margin: auto;
+    }
+
+    /*YOUTUBE video*/
+    .div1{
+      background-image:url("KL images/KL1.jpg");
+      width:absolute;
+      height:80%;
+      padding:30px;
+      border: 1px solid;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+    .div2 {
+       width:600px;
+       height:350px;
+       background:white;
+       border:1px;
+       padding:1px;
+       float:left;
+      }
+
+    .div3{
+        width:450px;
+        height:260px;
+        background:white;
+        border: 1px solid navy;
+        overflow:hidden;
+        opacity: 0.8;
+      }
+
+      h5{
+          float: right;
+      }
+
+      /*||||||||||||||||||||||||||||*/
+
+     /* link button*/
+     .button1 {
+        border-radius: 10px;
+        background-color: lightpink;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+        padding: 10px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2px;
+        float:right;
+      }
+
+      .button1 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button1 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.3s;
+      }
+
+      .button1:hover span {
+        padding-right: 25px;
+      }
+
+      .button1:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      /*||||||||||||||||||||||||||*/
+
+      img {
+        float: left;
+        margin-right: 10px;
+        border-radius:20px;
+      }
+
+      /* inside the box */
+      .button2 {
+        font-size: 16px;
+        font-style: Arial;
+        background-color:#ffebc7;
+        border-radius: 10px 25px;
+        padding: 5px;
+        display: inline-block;
+        margin-right: 4px;
+        margin-top: 50px;
+        /* cursor: pointer; */
+        -webkit-transition-duration: 0.2s; /* Safari */
+        transition-duration: 0.2s;
+        max-width: 84%;
+        height: 25%;
+      }
+
+      .button2:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+      #myBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border: 20px;
+        background-color: #DCDCDC;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 100px;
+      }
+
+      #myBtn:hover {
+        background-color: #A9A9A9;
+      }
+
+     </style>
+    </head>
+
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="KL images/backtotop.gif" style="width:25px;"></button>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+    <h1 style="border-bottom:1px solid">Kuala Lumpur </h1>
+    <h4>Kuala Lumpur, also known as KL is the capital of Malaysia.
+    The words Kuala Lumpur literally mean 'Muddy Confluence'.</h4>
+    <a href="#KLCC"><img src="KL images/readmore.jpg"
+    style="width:10%;float:right;"></a>
+    </div>
+    <br>
+          <div class="div1">
+            <div class="div2">
+          <iframe width="600" height="350" src="C:\Users\USER\Downloads\Greater Kuala Lumpur  Development - Latest June 2019.mp4"> </iframe>
+          </div>
+
+          <div class="div3" style="padding:10px;">
+            <img src="KL images/whyKL.jpg" style="width:70px;text-align:justify;float:right;">
+            <p>
+              <h2>Why KL?</h2>
+              Major tourist highlights in Kuala Lumpur include the Chinatown (Petaling Street)
+              , KL Tower, KLCC, Batu Caves and many others are most located within the city center.
+              <br>Kuala Lumpur is known as a Shopping Heaven. Especially in the central district of KL
+              (also known as KLCC - Kuala Lumpur City Center), you can find a variety of shopping malls.
+              <br><br><a href="http://www.wonderfulmalaysia.com/kuala-lumpur-city-malaysia.htm">
+              <button class="button1"><span>Read more</span></button>
+            </a>
+            </p>
+
+          </div>
+          </div>
+
+      <div>
+      <div class="button2">
+        <h5>4.75(100+)</h5>
+      <img src="KL images/KLCC1.jpg" style="width:40%;height:60%;padding:10px;">
+      <h2 id="KLCC">KLCC</h2>
+      Just as its name suggests, there is only one way to describe KLCC: the heart of Kuala Lumpur.
+      At once an entertainment, commercial and business focal point, KLCC is home to some of the most popular landmarks in Malaysia,
+      making it a popular tourist destination.
+      <br><br><br><img src="KL images/location.gif" style="width:20px;">241, Suria KLCC, Kuala Lumpur City Centre, 50088 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.
+      <br><br><img src="KL images/Time.gif" style="width:20px;padding-top:1px;">10am-10pm.<br>
+      <nav>
+      <a href="http://www.kuala-lumpur.ws/klareas/klcc.htm">
+      <button class="button1"><span>Read More</span></button>
+    </a>
+    </nav>
+    </div>
+
+
+
+    <br><br>
+    <div class="button2">
+      <img src="KL images/Pavilion.jpg" style="width:40%;height:70%;padding:10px;">
+      <h2>Pavilion</h2>
+      Pavilion Kuala Lumpur is an award-winning, premier shopping destination houses eight
+      precincts to fulfill all your personalised indulgences.
+      Experience the excitement of this 1.37 million sq ft retail haven with over 550 outlets offering the finest selections of shopping,
+      dining and urban leisure.<br><br>
+      <img src="KL images/location.gif" style="width:20px;">168, Bukit Bintang Street, Bukit Bintang, 55100 Kuala Lumpur, Federal Territory of Kuala Lumpur.
+      <br><img src="KL images/Time.gif" style="width:20px;padding-bottom:2px;">10am-10pm.<br>
+      <nav><a href="http://www.kuala-lumpur.ws/klshopping/pavilion-kl.htm">
+      <button class="button1"><span>Read More</span></button>
+      </a>
+    </nav>
+    </div>
+
+    <br><br>
+    <div class="button2">
+      <img src="KL images/BatuCaves.jpg" style="width:40%;height:40%;padding:10px;">
+      <h2>Batu Caves</h2>
+      Batu Caves is a limestone hill that has a series of caves and cave temples in Gombak, Selangor, Malaysia.
+      It takes its name from the Sungai Batu, which flows past the hill.
+      It is the tenth limestone hill from Ampang.
+      Batu Caves is also the name of a nearby village.<br><br>
+      <img src="KL images/location.gif" style="width:20px;">Gombak, 68100 Batu Caves, Selangor.<br>
+      <nav><a href="http://www.kuala-lumpur.ws/attractions/batu-caves.htm">
+      <button class="button1"><span>Read More</span></button>
+      </a>
+      </nav>
+    </div>
+
+    <br><br>
+    <div class="button2">
+      <img src="KL images/JlnPetaling.jpg" style="width:40%;height:30%;padding:10px;">
+      <h2>Chinatown</h2>
+      Kuala Lumpur Chinatown is a must when visiting this big, bustling city.
+      Spread across several streets including Jalan Petaling, Jalan Tun Tan Cheng Lock and Jalan Hang Kasturi,
+      Chinatown's shopping bargains are deals of a lifetime, especially at the Petaling Street Night Market.
+      What is more, shopping in Chinatown is not just about buying modern items; a lot of locals visiting the herbal shops are
+      here to purchase traditional medicine.
+      <br><br>
+      <img src="KL images/location.gif" style="width:20px;">88-132, Jalan Petaling, City Centre, 50000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.
+      <br><img src="KL images/Time.gif" style="width:20px;padding-top:2px;">9am-12am.<br>
+      <nav><a href="http://www.kuala-lumpur.ws/klareas/chinatown_shopping.htm">
+      <button class="button1"><span>Read More</span></button>
+      </a>
+      </nav>
+    </div>
+
+    <br><br>
+    <div class="button2">
+      <img src="KL images/KLTower.jpg" style="width:40%;height:45%;padding:10px;">
+      <h2>Menara Kuala Lumpur</h2>
+      The Kuala Lumpur Tower is a communications tower located in Kuala Lumpur, Malaysia.
+      Its construction was completed on 1 March 1995.
+      It features an antenna that increases its height to 421 metres and is the 7th tallest freestanding tower in the world.
+      The roof of the pod is at 335 metres.<br><br>
+      <img src="KL images/location.gif" style="width:20px;">No. 2 Jalan Punchak, Off, Jalan P Ramlee, Kuala Lumpur, 50250 Kuala Lumpur.
+      <br><br><img src="KL images/Time.gif" style="width:20px;padding-top:2px;">9am-10pm.<br>
+      <nav><a href="http://www.kuala-lumpur.ws/attractions/menara-kl-tower.htm">
+      <button class="button1"><span>Read More</span></button>
+      </a>
+      </nav>
+    </div>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+
+</div>
+</body>
+</html>

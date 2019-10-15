@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Sabah</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="state.css">
+      <style>
+    body,html {
+            height: 100%;
+            max-width: 100%;
+            }
+
+    * {
+    box-sizing: border-box;
+    }
+
+    h2{
+      border-bottom: 1px solid;
+    }
+
+    .bg-image {
+    /* The image used */
+    background-image: url("Sabah images/Sabah.jpg");
+
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(3px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    }
+    /*|||||||||||||||||||*/
+
+    div{
+      padding:50px 100px;
+      width:auto;
+      background: honeydew;
+      margin: auto;
+    }
+
+    /*YOUTUBE video*/
+    .div1{
+      background-image:url("Sabah images/Sabah1.jpg");
+      width:absolute;
+      height:80%;
+      padding:30px;
+      border:1px solid;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+    .div2{
+       width:600px;
+       height:350px;
+       background:white;
+       border: 1px solid;
+       float:left;
+       padding:1px;
+      }
+
+    .div3{
+        width:450px;
+        height:280px;
+        background:white;
+        border: 1px solid;
+        overflow:hidden;
+        opacity:0.8;
+      }
+      /*||||||||||||||||||||||||||||*/
+
+     /* link button*/
+     .button1 {
+        border-radius: 10px;
+        background-color: lightpink;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+        padding: 10px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        float:right;
+      }
+
+      .button1 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button1 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.3s;
+      }
+
+      .button1:hover span {
+        padding-right: 25px;
+      }
+
+      .button1:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      /*||||||||||||||||||||||||||*/
+
+      img {
+        float: left;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius:20px;
+      }
+
+      /* inside the box */
+      .button2 {
+        font-size: 16px;
+        font-style: Arial;
+        background-color:#ffebc7;
+        border-radius: 10px 25px;
+        padding: 5px;
+        display: inline-block;
+        margin-right: 4px;
+        margin-top: 50px;
+        -webkit-transition-duration: 0.2s; /* Safari */
+        transition-duration: 0.2s;
+        max-width: 84%;
+        height: 25%;
+        }
+
+        .button2:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        #myBtn {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          border: 20px;
+          background-color: #DCDCDC;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 100px;
+        }
+
+        #myBtn:hover {
+          background-color: #A9A9A9;
+        }
+
+     </style>
+    </head>
+
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="KL images/backtotop.gif" style="width:25px;"></button>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+    <h1 style="border-bottom:1px solid">Sabah</h1>
+    <h4>Sabah is a Malaysian state occupying the northern part of
+    the island of Borneo.</h4>
+    <a href="#Kota"><img src="KL images/readmore.jpg"
+    style="width:10%;float:right;"></a>
+    </div>
+
+    <br><br>
+
+          <div class="div1">
+            <div class="div2">
+          <iframe width="600" height="350" src="C:\Users\USER\Downloads\Kota Kinabalu - (Sabah, Borneo Malaysia).mp4"> </iframe>
+          </div>
+
+          <div class="div3" style="padding:10px;">
+            <img src="Sabah images/whySabah.jpg" style="width:70px;float:right;">
+            <p>
+              <h2>Why Sabah?</h2>
+              One of the biggest reasons to visit Sabah is to experience the vast diversity of
+              landscapes and environments.
+              Sabah is the definition of biodiversity.
+              Another reason to visit Sabah is to witness and experience the cultural diversity.
+              From the Kadazan-Dusun Sumazau dance and the Murut’s Magunatip bamboo dance,
+              visitors have the chance to observe traditions seen nowhere else in Malaysia.
+              <br><br><a href="https://theculturetrip.com/asia/malaysia/articles/11-amazing-reasons-to-visit-sabah-malaysia/">
+              <button class="button1"><span>Read more</span></button>
+              </a>
+            </p>
+          </div>
+        </div>
+
+    <div>
+    <div class="button2">
+      <img src="Sabah images/KotaKinabalu.jpg" style="width:40%;height:45%;">
+      <h2 id="Kota">Mount Kinabalu</h2>
+      Probably the most famous attraction in Sabah is Mount Kinabalu which is a sacred mountain
+      located on the outskirts of the Kota Kinabalu.
+      This mountain is part of the famous Crocker Mountain Range and stands at some 13,000 feet above sea level.
+      <br><br>
+      <img src="KL images/Time.gif" style="width:30px;padding-top:2px;">10am to 7pm on weekdays &
+      8am to 5pm on weekends <br>
+      <nav><a href="https://www.mountkinabalu.com/mount-kinabalu">
+      <button class="button1"><span>Read More</span></button>
+      </a>
+      </nav>
+    </div>
+
+    <br><br>
+    <div class="button2">
+      <img src="Sabah images/MatakingIsland.jpg" style="width:40%;height:42%;">
+      <h2>Mataking Island</h2>
+      Mataking Island is the furthest from Semporna in east coast Sabah where a boat trip takes nearly an hour one way.
+      Just stroll around the island to look for your own secluded place. One of the unique things about the
+      island is that they have an underwater post office where you can literally post a letter or postcard.
+      <br><br>
+      <nav><a href="https://www.thrilophilia.com/attractions/mataking-beach">
+      <button class="button1"><span>Read More</span></button>
+      </a>
+    </nav>
+    </div>
+
+    <br><br>
+    <div class="button2">
+      <img src="Sabah images/MabulIsland.jpg" style="width:40%;height:40%;">
+      <h2>Mabul Island</h2>
+      Mabul is a small island off the south-eastern coast of Sabah in Malaysia.
+    	The island has been a fishing village since the 1970s. In the 1990s,
+      it first became popular to divers due to its proximity to Sipadan island.
+      <br><br>
+      <img src="KL images/Time.gif" style="width:30px;padding-top:1px;">6am-5:30pm<br>
+      <nav><a href="http://www.journeymalaysia.com/mi_mabul.htm">
+      <button class="button1"><span>Read More</span></button>
+      </a>
+    </nav>
+    </div>
+
+    <br><br>
+    <div class="button2">
+      <img src="Sabah images/TanjungAru.jpg" style="width:40%;height:28%;">
+      <h2>Tanjung Aru Beach</h2>
+      Tanjung Aru is a sub-district of Kota Kinabalu in Sabah, of Malaysia.
+    	Its main feature is its beach called Tanjung Aru Beach which stretches to over 2 kilometres long along with new skyscrapers.
+  		It also has its own township called Tanjung Aru Town.
+      <br><br>
+      <img src="KL images/Time.gif" style="width:30px;padding-top:1px;">11am-11pm<br>
+      <nav><a href="http://www.sabahtourism.com/destination/tanjung-aru-beach/">
+      <button class="button1"><span>Read More</span></button>
+      </a>
+    </nav>
+    </div>
+
+    <br><br>
+      <div class="button2">
+        <img src="Sabah images/SabahMosque.jpg" style="width:40%;height:70%;">
+        <h2>Sabah City Mosque</h2>
+        The Kuala Lumpur Tower is a communications tower located in Kuala Lumpur, Malaysia.
+        Its construction was completed on 1 March 1995.
+        It features an antenna that increases its height to 421 metres and is the 7th tallest freestanding tower in the world.
+        The roof of the pod is at 335 metres.
+        <br><br><img src="KL images/location.gif" style="width:30px;">Jalan Pasir, Jalan Teluk Likas, Kampung Likas, 88400 Kota Kinabalu, Sabah.
+        <br><br><img src="KL images/Time.gif" style="width:30px;padding-top:2px;">4am-11:30pm<br>
+        <nav><a href="http://www.sabahtourism.com/destination/city-mosque/">
+        <button class="button1"><span>Read More</span></button>
+        </a>
+      </nav>
+    </div>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+  </div>
+  </body>
+  </html>

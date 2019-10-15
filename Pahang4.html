@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pahang</title>
+  </head>
+  <style media="screen">
+  *{
+    box-sizing: border-box;
+  }
+    .parallax
+  {
+    background-image: url("Slider3.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text
+  {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  .details
+  {
+    padding: 50px;
+    width:absolute;
+    margin: 10px;
+    font-size: 25px;
+
+  }
+  .details h3
+  {
+    padding:10px;
+    font-family: Helvetica;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .details p
+  {
+    font-size:20px;
+    text-align:justify;
+    font-family: sans-serif;
+    padding-right:20px;
+    padding-left: 500px;
+
+  }
+.box
+{
+  position: relative;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 470px;
+  border: 1px solid #ccc;
+  transition: box-shadow .3s;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  -webkit-transition-duration:0.2s;
+}
+.box:hover
+{
+  box-shadow:0 17px 50px 0 rgba(0,0,0,0,.19);
+}
+.btn
+{
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 16px;
+  width:150px;
+  height:60px;
+  border-radius: 80px;
+  line-height: 60px;
+  text-align: center;
+  border: 3px solid #009688;
+  display: block;
+  text-decoration: none;
+  margin:0;
+  color: #009688;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+  left:50px;
+
+}
+.btn:before
+{
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  opacity: .5;
+  top:-100%;
+  left:0;
+  z-index: -1;
+  transition: .3s;
+}
+.btn:after
+{
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #009688;
+  top:-100%;
+  left:0;
+  z-index: -1;
+  transition: .3s;
+  transition-delay: .2s;
+}
+.btn:hover
+{
+  color: #fff;
+}
+.btn:hover:before
+{
+  top:0;
+}
+.btn:hover:after
+{
+  top:0;
+}
+.hover-img1 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(genting.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img1:hover{
+background:url(genting2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img2 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(cameron.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+
+}
+.hover-img2:hover{
+background:url(cameron2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img3 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(fraser.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img3:hover{
+background:url(fraser2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img4 {
+position: relative;
+float: left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(elephant.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img4:hover{
+background:url(elephant2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.hover-img5 {
+position: relative;
+float:left;
+width: 475px;
+height: 350px;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+background:url(pekan.jpg);
+-webkit-transform:rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+border-radius: 15px;
+padding:10px;
+background-repeat: no-repeat;
+}
+.hover-img5:hover{
+background:url(pekan2.jpg);
+background-repeat: no-repeat;
+border-radius: 15px;
+}
+.video
+{
+  position: relative;
+  width:100%;
+  padding-top: 20px;
+  padding-bottom: 325px;
+  height:0;
+  text-align: center;
+}
+.iframe2
+{
+  float: right;
+}
+.container {
+  height:100px;
+  display: flex;
+  /*flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  float: left;
+}
+
+.heart {
+  background-image: url(https://abs.twimg.com/a/1474649078/img/animations/web_heart_animation.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+  .heart:active {
+      animation: heartAnim .8s infinite steps(28) forwards;
+
+  }
+
+  .heart:hover {
+      background-position: right top;
+  }
+  .heart::after{
+    color:red;
+
+
+
+  }
+
+@keyframes heartAnim {
+  from {
+      background-position: left top;
+  }
+  to {
+      background-position: right top;
+  }
+}
+  </style>
+  <body>
+    <div class="parallax">
+      <div class="text">
+        <h1 style="font-family:Helvetica;">
+          Pahang
+        </h1>
+          <h5 style="font-family:arial;font-weight:normal;font-size:15px;">
+            Almost all of the highland retreats, some beautiful islands and beaches are found in Pahang. If you are a nature lover, you shouldn't miss out the destinations of Cameron Highlands, Genting Highlands and Fraser's Hill. If you are looking for adventure, you should visit parks such as Kenong Rimba, Endau-Rompin and Taman Negara (National Park).
+          </h5>
+      </div>
+    </div>
+  <div class="video">
+      <iframe width="560" height="315" src="Pahang Tourist Attractions_ 15 Top Places to Visit.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <h2><i>Genting Highlands, Malaysia - Progress Update - June 2018</i> Credit: SCM Southern Corridor Malaysia </h2>
+  </div>
+  <br>
+  <br>
+  <div class="details">
+  <div class="box">
+    <div class="hover-img1">
+    </div>
+  <h3>Genting Highlands</h3>
+  <p>
+    Breathe deep in Genting Highlands where, unlike nearby Kuala Lumpur, the air is fresh and clean. Aside from its resort life, visitors flock to hill station to enjoy cooler temperatures, mountain scenery, strawberry farms, and a relatively undisturbed, natural rain forest.
+  </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63724.853277669776!2d101.74819321447914!3d3.3981165167577316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc14067e9a39c3%3A0x1b8edcdc4d5bf56!2sGenting%20Highlands%2C%20Pahang!5e0!3m2!1sen!2smy!4v1570526006400!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+  <p>
+  Working Hours:
+  Morning:8am-10am
+  Afternoon:2pm-4pm.
+  </p>
+  <div class="container">
+  <span class="heart"></span>
+  </div>
+  <br>
+    <a href="https://www.rwgenting.com/" class="btn" target="_blank">Read More</a>
+    </div>
+    <br>
+  <div class="box">
+    <div class="hover-img2">
+    </div>
+    <h3>Cameron Highlands</h3>
+    <p>
+      Cameron Highlands is the most popular of the highland retreats in Malaysia. Located at almost 2,000 meters at its highest point, Camerons offers visitors a moderate climate with daytime temperatures averaging around 25°C and 18°C at night. This makes the environment conducive for growing continental plants, fruits and vegetables while providing a cool escape for city-dwellers.
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509143.5283023422!2d101.19010603815742!3d4.469739814938578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ca5082fa7f0d47%3A0x655625f6e1faf2f4!2sCameron%20Highlands%2C%20Pahang!5e0!3m2!1sen!2smy!4v1570526111890!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours: 8am-5pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+    <a href="http://www.cameronhighlandsinfo.com/" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+    <div class="box">
+      <div class="hover-img3">
+
+      </div>
+    <h3>Fraser's Hill</h3>
+    <p>
+      Fraser’s Hill is a highland resort destination nestled among the mountains of Pahang, located two hours away from Kuala Lumpur. Locally known as Bukit Fraser, this cooling holiday retreat is popular for its nature activities and cooling climate, being one of the last hill stations of Malaysia, an imprint by former British colonial masters
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127407.05122969486!2d101.66972539205344!3d3.7070397878606016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cbf4e2c3261e61%3A0xe270502734b6ffb4!2sFraser&#39;s%20Hill%2C%20Pahang!5e0!3m2!1sen!2smy!4v1570526213210!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours:8am-5pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+      <a href="https://www.fraserhill.info/" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+  <div class="box">
+    <div class="hover-img4">
+    </div>
+    <h3>Elephant Sanctuary</h3>
+    <p>
+      Pahang is a rare and fantastic opportunity to get up close to endemic Malaysian elephants.This truly unique Elephant Orphanage of Kuala Gandah in Pahang will give you a very rare opportunity to learn about these displaced gentle giants.Get the chance to ride them through the jungle, with the help of an elephant guide, or mahout.For the brave and adventurous, there are opportunities to take the elephants down to the river and help give them a bath!
+    </p>
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.979352463294!2d102.14276491427037!3d3.592209397385953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ceabe8c35aefdd%3A0x6b74053fa139335e!2sKuala%20Gandah%20National%20Elephant%20Conservation%20Centre!5e0!3m2!1sen!2smy!4v1570526371944!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours: 8am-5pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+      <a href="https://www.wildlife.gov.my/index.php/en/public/2016-05-10-02-34-43/2016-05-10-02-42-10" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+  <div class="box">
+    <div class="hover-img5">
+
+    </div>
+    <h3>Pekan</h3>
+    <p>
+      The seat of the Pahang sultanate, Pekan has a regal air and is uncommonly scenic with its wide clean streets, spacious padang (field or grassy area) and many grand buildings surrounded by expansive pristine lawns as well as an impressive polo field and several noble palaces that are slowly disintegrating beneath a combination of fierce sun and heavy rain.
+    <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019731.6364258229!2d102.56483419386538!3d3.268860359170934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cf148d79ac4dfb%3A0x7189f6db57736bb6!2sPekan%2C%20Pahang!5e0!3m2!1sen!2smy!4v1570526557764!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
+    <p>
+      Working Hours: 9am-5pm.
+    </p>
+    <div class="container">
+    <span class="heart"></span>
+    </div>
+    <br>
+      <a href="https://www.pahangtourism.org.my/index.php/destination/10-tourism-icon/72-pekan" class="btn" target="_blank">Read More</a>
+  </div>
+  <br>
+</div>
+  </body>
+</html>
