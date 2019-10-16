@@ -970,6 +970,7 @@ button[type=button].cs-btn:focus{
     max-width: 800px;
     margin: 10px auto;
     font-weight: 200;
+    font-family: 'Lato', sans-serif;
   }
 
   .expandBtn{
