@@ -23,6 +23,7 @@
 }
 
 body{
+    font-family: 'Lato', sans-serif;
     font-family: "SFProText";
 }
 
@@ -192,6 +193,7 @@ a:hover{
 }
 
 .grid figure figcaption {
+    font-family: 'Lato', sans-serif;
 	padding: 2em;
 	color: #fff;
 	text-transform: uppercase;
@@ -334,6 +336,7 @@ figure.effect-circle:hover p {
 
 /* Footer */
 .footer{
+    margin-top: 20px;
     background: #f7f7f7;
     padding: 50px;
     display: block;
@@ -450,6 +453,8 @@ figure.effect-circle:hover p {
 .footer h3 {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    font-size: 1.75rem;
+    font-style: normal;
 }
 
 .footer h3 span {

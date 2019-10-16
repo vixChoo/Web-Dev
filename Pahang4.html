@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pahang</title>
+    <link rel="stylesheet" href="bootstrap.css">
   </head>
   <style media="screen">
   *{
@@ -11,7 +12,7 @@
   }
     .parallax
   {
-    background-image: url("Slider3.png");
+    background-image: url("Pahang Images/Slider3.png");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -59,25 +60,26 @@
     padding-left: 500px;
 
   }
-.box
-{
-  position: relative;
-  padding-bottom: 20px;
-  width: 100%;
-  height: 470px;
-  border: 1px solid #ccc;
-  transition: box-shadow .3s;
-  border-radius: 15px;
-  padding: 5px;
-  cursor: pointer;
-  transition-duration: 0.2s;
-  -webkit-transition-duration:0.2s;
-}
-.box:hover
-{
-  box-shadow:0 17px 50px 0 rgba(0,0,0,0,.19);
-}
-.btn
+  .box
+  {
+    position: relative;
+    padding-bottom: 20px;
+    display:block;
+    width: 100%;
+    height: 470px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+  }
+  .box:hover
+  {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+.btn5
 {
   font-family: arial;
   text-transform: uppercase;
@@ -96,10 +98,11 @@
   overflow: hidden;
   background: transparent;
   transition: .3s;
-  left:50px;
+  left:700px;
+  bottom: 125px;
 
 }
-.btn:before
+.btn5:before
 {
   content:"";
   width: 100%;
@@ -112,7 +115,7 @@
   z-index: -1;
   transition: .3s;
 }
-.btn:after
+.btn5:after
 {
   content:"";
   width: 100%;
@@ -125,15 +128,15 @@
   transition: .3s;
   transition-delay: .2s;
 }
-.btn:hover
+.btn5:hover
 {
   color: #fff;
 }
-.btn:hover:before
+.btn5:hover:before
 {
   top:0;
 }
-.btn:hover:after
+.btn5:hover:after
 {
   top:0;
 }
@@ -147,7 +150,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(genting.jpg);
+background:url('Pahang Images/genting.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -155,7 +158,7 @@ padding:10px;
 background-repeat: no-repeat;
 }
 .hover-img1:hover{
-background:url(genting2.jpg);
+background:url('Pahang Images/genting2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -169,7 +172,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(cameron.jpg);
+background:url('Pahang Images/cameron.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -178,7 +181,7 @@ background-repeat: no-repeat;
 
 }
 .hover-img2:hover{
-background:url(cameron2.jpg);
+background:url('Pahang Images/cameron2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -192,7 +195,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(fraser.jpg);
+background:url('Pahang Images/fraser.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -200,7 +203,7 @@ padding:10px;
 background-repeat: no-repeat;
 }
 .hover-img3:hover{
-background:url(fraser2.jpg);
+background:url('Pahang Images/fraser2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -214,7 +217,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(elephant.jpg);
+background:url('Pahang Images/elephant.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -222,7 +225,7 @@ padding:10px;
 background-repeat: no-repeat;
 }
 .hover-img4:hover{
-background:url(elephant2.jpg);
+background:url('Pahang Images/elephant2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -236,7 +239,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(pekan.jpg);
+background:url('Pahang Images/pekan.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -244,7 +247,7 @@ padding:10px;
 background-repeat: no-repeat;
 }
 .hover-img5:hover{
-background:url(pekan2.jpg);
+background:url('Pahang Images/pekan2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -269,41 +272,518 @@ border-radius: 15px;
   align-items: center;*/
   float: left;
 }
-
-.heart {
-  background-image: url(https://abs.twimg.com/a/1474649078/img/animations/web_heart_animation.png);
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: 2900%;
-  cursor: pointer;
-  display: block;
-  width: 100px;
-  height: 100px;
+#rating1 label{
+text-shadow: 0px 0px 5px;
 }
-  .heart:active {
-      animation: heartAnim .8s infinite steps(28) forwards;
 
-  }
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating1 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
 
-  .heart:hover {
-      background-position: right top;
-  }
-  .heart::after{
-    color:red;
+}
 
+#rating1 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
 
+#rating1 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
 
-  }
+#rating1 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating1 input:checked ~ label:before{
+opacity: 1;
+}
+#rating1:hover input ~ label:before{
+opacity: 0;
+}
 
-@keyframes heartAnim {
-  from {
-      background-position: left top;
-  }
-  to {
-      background-position: right top;
-  }
+#rating1 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating1 input + label:hover:before,
+#rating1 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating1 input + label:nth-of-type(1):after,
+#rating1 input + label:nth-of-type(1):before,
+#rating1 input +  label:nth-of-type(1):hover:before,
+#rating1 input + label:nth-of-type(1):hover ~ label:before,
+#rating1 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating1 input + label:nth-of-type(2):after,
+#rating1 input + label:nth-of-type(2):before,
+#rating1 input + label:nth-of-type(2):hover:before,
+#rating1 input + label:nth-of-type(2):hover ~ label:before,
+#rating1 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating1 input + label:nth-of-type(3):after,
+#rating1 input + label:nth-of-type(3):before,
+#rating1 input + label:nth-of-type(3):hover:before,
+#rating1 input + label:nth-of-type(3):hover ~ label:before,
+#rating1 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating1 input + label:nth-of-type(4):after,
+#rating1 input + label:nth-of-type(4):before,
+#rating1 input + label:nth-of-type(4):hover:before,
+#rating1 input + label:nth-of-type(4):hover ~ label:before,
+#rating1 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating1 input + label:nth-of-type(5):after,
+#rating1 input + label:nth-of-type(5):before,
+#rating1 label:nth-of-type(5):hover:before,
+#rating1 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating1 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
+}
+#rating2 label{
+text-shadow: 0px 0px 5px;
+}
+
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating2 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
+
+}
+
+#rating2 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
+
+#rating2 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating2 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating2 input:checked ~ label:before{
+opacity: 1;
+}
+#rating2:hover input ~ label:before{
+opacity: 0;
+}
+
+#rating2 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating2 input + label:hover:before,
+#rating2 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating2 input + label:nth-of-type(1):after,
+#rating2 input + label:nth-of-type(1):before,
+#rating2 input +  label:nth-of-type(1):hover:before,
+#rating2 input + label:nth-of-type(1):hover ~ label:before,
+#rating2 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating2 input + label:nth-of-type(2):after,
+#rating2 input + label:nth-of-type(2):before,
+#rating2 input + label:nth-of-type(2):hover:before,
+#rating2 input + label:nth-of-type(2):hover ~ label:before,
+#rating2 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating2 input + label:nth-of-type(3):after,
+#rating2 input + label:nth-of-type(3):before,
+#rating2 input + label:nth-of-type(3):hover:before,
+#rating2 input + label:nth-of-type(3):hover ~ label:before,
+#rating2 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating2 input + label:nth-of-type(4):after,
+#rating2 input + label:nth-of-type(4):before,
+#rating2 input + label:nth-of-type(4):hover:before,
+#rating2 input + label:nth-of-type(4):hover ~ label:before,
+#rating2 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating2 input + label:nth-of-type(5):after,
+#rating2 input + label:nth-of-type(5):before,
+#rating2 label:nth-of-type(5):hover:before,
+#rating2 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating2 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
+}
+#rating3 label{
+text-shadow: 0px 0px 5px;
+}
+
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating3 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
+
+}
+
+#rating3 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
+
+#rating3 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating3 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating3 input:checked ~ label:before{
+opacity: 1;
+}
+#rating3:hover input ~ label:before{
+opacity: 0;
+}
+
+#rating3 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating3 input + label:hover:before,
+#rating3 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating3 input + label:nth-of-type(1):after,
+#rating3 input + label:nth-of-type(1):before,
+#rating3 input +  label:nth-of-type(1):hover:before,
+#rating3 input + label:nth-of-type(1):hover ~ label:before,
+#rating3 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating3 input + label:nth-of-type(2):after,
+#rating3 input + label:nth-of-type(2):before,
+#rating3 input + label:nth-of-type(2):hover:before,
+#rating3 input + label:nth-of-type(2):hover ~ label:before,
+#rating3 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating3 input + label:nth-of-type(3):after,
+#rating3 input + label:nth-of-type(3):before,
+#rating3 input + label:nth-of-type(3):hover:before,
+#rating3 input + label:nth-of-type(3):hover ~ label:before,
+#rating3 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating3 input + label:nth-of-type(4):after,
+#rating3 input + label:nth-of-type(4):before,
+#rating3 input + label:nth-of-type(4):hover:before,
+#rating3 input + label:nth-of-type(4):hover ~ label:before,
+#rating3 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating3 input + label:nth-of-type(5):after,
+#rating3 input + label:nth-of-type(5):before,
+#rating3 label:nth-of-type(5):hover:before,
+#rating3 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating3 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
+}
+#rating4 label{
+text-shadow: 0px 0px 5px;
+}
+
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating4 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
+
+}
+
+#rating4 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
+
+#rating4 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating4 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating4 input:checked ~ label:before{
+opacity: 1;
+}
+#rating4:hover input ~ label:before{
+opacity: 0;
+}
+
+#rating4 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating4 input + label:hover:before,
+#rating4 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating4 input + label:nth-of-type(1):after,
+#rating4 input + label:nth-of-type(1):before,
+#rating4 input +  label:nth-of-type(1):hover:before,
+#rating4 input + label:nth-of-type(1):hover ~ label:before,
+#rating4 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating4 input + label:nth-of-type(2):after,
+#rating4 input + label:nth-of-type(2):before,
+#rating4 input + label:nth-of-type(2):hover:before,
+#rating4 input + label:nth-of-type(2):hover ~ label:before,
+#rating4 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating4 input + label:nth-of-type(3):after,
+#rating4 input + label:nth-of-type(3):before,
+#rating4 input + label:nth-of-type(3):hover:before,
+#rating4 input + label:nth-of-type(3):hover ~ label:before,
+#rating4 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating4 input + label:nth-of-type(4):after,
+#rating4 input + label:nth-of-type(4):before,
+#rating4 input + label:nth-of-type(4):hover:before,
+#rating4 input + label:nth-of-type(4):hover ~ label:before,
+#rating4 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating4 input + label:nth-of-type(5):after,
+#rating4 input + label:nth-of-type(5):before,
+#rating4 label:nth-of-type(5):hover:before,
+#rating4 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating4 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
+}
+#rating5 label{
+text-shadow: 0px 0px 5px;
+}
+
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating5 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
+
+}
+
+#rating5 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
+
+#rating5 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating5 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating5 input:checked ~ label:before{
+opacity: 1;
+}
+#rating5:hover input ~ label:before{
+opacity: 0;
+}
+
+#rating5 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating5 input + label:hover:before,
+#rating5 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating5 input + label:nth-of-type(1):after,
+#rating5 input + label:nth-of-type(1):before,
+#rating5 input +  label:nth-of-type(1):hover:before,
+#rating5 input + label:nth-of-type(1):hover ~ label:before,
+#rating5 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating5 input + label:nth-of-type(2):after,
+#rating5 input + label:nth-of-type(2):before,
+#rating5 input + label:nth-of-type(2):hover:before,
+#rating5 input + label:nth-of-type(2):hover ~ label:before,
+#rating5 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating5 input + label:nth-of-type(3):after,
+#rating5 input + label:nth-of-type(3):before,
+#rating5 input + label:nth-of-type(3):hover:before,
+#rating5 input + label:nth-of-type(3):hover ~ label:before,
+#rating5 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating5 input + label:nth-of-type(4):after,
+#rating5 input + label:nth-of-type(4):before,
+#rating5 input + label:nth-of-type(4):hover:before,
+#rating5 input + label:nth-of-type(4):hover ~ label:before,
+#rating5 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating5 input + label:nth-of-type(5):after,
+#rating5 input + label:nth-of-type(5):before,
+#rating5 label:nth-of-type(5):hover:before,
+#rating5 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating5 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
 }
   </style>
+   <link rel="stylesheet" href="vix.css">
   <body>
     <div class="parallax">
       <div class="text">
@@ -316,9 +796,9 @@ border-radius: 15px;
       </div>
     </div>
   <div class="video">
-      <iframe width="560" height="315" src="Pahang Tourist Attractions_ 15 Top Places to Visit.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      <iframe width="560" height="315" src="Pahang Images/Pahang Tourist Attractions_ 15 Top Places to Visit.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
-      <h2><i>Genting Highlands, Malaysia - Progress Update - June 2018</i> Credit: SCM Southern Corridor Malaysia </h2>
+      <h2 style="font-size: 1.5em;"><i>Genting Highlands, Malaysia - Progress Update - June 2018</i> Credit: SCM Southern Corridor Malaysia </h2>
   </div>
   <br>
   <br>
@@ -333,15 +813,21 @@ border-radius: 15px;
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63724.853277669776!2d101.74819321447914!3d3.3981165167577316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc14067e9a39c3%3A0x1b8edcdc4d5bf56!2sGenting%20Highlands%2C%20Pahang!5e0!3m2!1sen!2smy!4v1570526006400!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
   <p>
-  Working Hours:
-  Morning:8am-10am
-  Afternoon:2pm-4pm.
+    <div>
+      <img src="Pahang Images/clock.gif" style="width:60px;height:40px;">
+      Morning:8am-10am
+      Afternoon:2pm-4pm.
+    </div>
   </p>
-  <div class="container">
-  <span class="heart"></span>
+  <div id="rating1">
+  <input type="radio" id="star1-5" name="rating" value="5" class="visuallyhidden" /><label for="star1-5" title="Rocks!">★</label>
+  <input type="radio" id="star1-4" name="rating" value="4" class="visuallyhidden" /><label for="star1-4" title="Pretty good">★</label>
+  <input type="radio" id="star1-3" name="rating" value="3" class="visuallyhidden" /><label for="star1-3" title="Meh">★</label>
+  <input type="radio" id="star1-2" name="rating" value="2" class="visuallyhidden" /><label for="star1-2" title="Kinda bad">★</label>
+  <input type="radio" id="star1-1" name="rating" value="1" class="visuallyhidden" /><label for="star1-1" title="Sucks big time">★</label>
   </div>
   <br>
-    <a href="https://www.rwgenting.com/" class="btn" target="_blank">Read More</a>
+    <a href="https://www.rwgenting.com/" class="btn5" target="_blank">Read More</a>
     </div>
     <br>
   <div class="box">
@@ -354,18 +840,24 @@ border-radius: 15px;
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509143.5283023422!2d101.19010603815742!3d4.469739814938578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ca5082fa7f0d47%3A0x655625f6e1faf2f4!2sCameron%20Highlands%2C%20Pahang!5e0!3m2!1sen!2smy!4v1570526111890!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
     <p>
-      Working Hours: 8am-5pm.
+      <div>
+        <img src="Pahang Images/clock.gif" style="width:60px;height:40px;">
+        Everyday: 8am-5pm.
+      </div>
     </p>
-    <div class="container">
-    <span class="heart"></span>
+    <div id="rating2">
+    <input type="radio" id="star2-5" name="rating2" value="5" class="visuallyhidden" /><label for="star2-5" title="Rocks!">★</label>
+    <input type="radio" id="star2-4" name="rating2" value="4" class="visuallyhidden" /><label for="star2-4" title="Pretty good">★</label>
+    <input type="radio" id="star2-3" name="rating2" value="3" class="visuallyhidden" /><label for="star2-3" title="Meh">★</label>
+    <input type="radio" id="star2-2" name="rating2" value="2" class="visuallyhidden" /><label for="star2-2" title="Kinda bad">★</label>
+    <input type="radio" id="star2-1" name="rating2" value="1" class="visuallyhidden" /><label for="star2-1" title="Sucks big time">★</label>
     </div>
     <br>
-    <a href="http://www.cameronhighlandsinfo.com/" class="btn" target="_blank">Read More</a>
+    <a href="http://www.cameronhighlandsinfo.com/" class="btn5" target="_blank">Read More</a>
   </div>
   <br>
     <div class="box">
       <div class="hover-img3">
-
       </div>
     <h3>Fraser's Hill</h3>
     <p>
@@ -374,13 +866,20 @@ border-radius: 15px;
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127407.05122969486!2d101.66972539205344!3d3.7070397878606016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cbf4e2c3261e61%3A0xe270502734b6ffb4!2sFraser&#39;s%20Hill%2C%20Pahang!5e0!3m2!1sen!2smy!4v1570526213210!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
     <p>
-      Working Hours:8am-5pm.
-    </p>
-    <div class="container">
-    <span class="heart"></span>
+      <div>
+        <img src="Pahang Images/clock.gif" style="width:60px;height:40px;">
+        Everyday: 8am-5pm.
+      </div>
+      </p>
+    <div id="rating3">
+    <input type="radio" id="star3-5" name="rating3" value="5" class="visuallyhidden" /><label for="star3-5" title="Rocks!">★</label>
+    <input type="radio" id="star3-4" name="rating3" value="4" class="visuallyhidden" /><label for="star3-4" title="Pretty good">★</label>
+    <input type="radio" id="star3-3" name="rating3" value="3" class="visuallyhidden" /><label for="star3-3" title="Meh">★</label>
+    <input type="radio" id="star3-2" name="rating3" value="2" class="visuallyhidden" /><label for="star3-2" title="Kinda bad">★</label>
+    <input type="radio" id="star3-1" name="rating3" value="1" class="visuallyhidden" /><label for="star3-1" title="Sucks big time">★</label>
     </div>
     <br>
-      <a href="https://www.fraserhill.info/" class="btn" target="_blank">Read More</a>
+      <a href="https://www.fraserhill.info/" class="btn5" target="_blank">Read More</a>
   </div>
   <br>
   <div class="box">
@@ -393,13 +892,20 @@ border-radius: 15px;
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.979352463294!2d102.14276491427037!3d3.592209397385953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ceabe8c35aefdd%3A0x6b74053fa139335e!2sKuala%20Gandah%20National%20Elephant%20Conservation%20Centre!5e0!3m2!1sen!2smy!4v1570526371944!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
     <p>
-      Working Hours: 8am-5pm.
-    </p>
-    <div class="container">
-    <span class="heart"></span>
+      <div>
+        <img src="Pahang Images/clock.gif" style="width:60px;height:40px;">
+        Everyday: 8am-5pm.
+      </div>
+      </p>
+    <div id="rating4">
+    <input type="radio" id="star4-5" name="rating4" value="5" class="visuallyhidden" /><label for="star4-5" title="Rocks!">★</label>
+    <input type="radio" id="star4-4" name="rating4" value="4" class="visuallyhidden" /><label for="star4-4" title="Pretty good">★</label>
+    <input type="radio" id="star4-3" name="rating4" value="3" class="visuallyhidden" /><label for="star4-3" title="Meh">★</label>
+    <input type="radio" id="star4-2" name="rating4" value="2" class="visuallyhidden" /><label for="star4-2" title="Kinda bad">★</label>
+    <input type="radio" id="star4-1" name="ratin45" value="1" class="visuallyhidden" /><label for="star4-1" title="Sucks big time">★</label>
     </div>
     <br>
-      <a href="https://www.wildlife.gov.my/index.php/en/public/2016-05-10-02-34-43/2016-05-10-02-42-10" class="btn" target="_blank">Read More</a>
+      <a href="https://www.wildlife.gov.my/index.php/en/public/2016-05-10-02-34-43/2016-05-10-02-42-10" class="btn5" target="_blank">Read More</a>
   </div>
   <br>
   <div class="box">
@@ -412,15 +918,105 @@ border-radius: 15px;
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019731.6364258229!2d102.56483419386538!3d3.268860359170934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cf148d79ac4dfb%3A0x7189f6db57736bb6!2sPekan%2C%20Pahang!5e0!3m2!1sen!2smy!4v1570526557764!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
     <p>
-      Working Hours: 9am-5pm.
-    </p>
-    <div class="container">
-    <span class="heart"></span>
+      <div>
+        <img src="Pahang Images/clock.gif" style="width:60px;height:40px;">
+        Everyday: 9am - 5pm.
+      </div>
+      </p>
+    <div id="rating5">
+    <input type="radio" id="star5-5" name="rating5" value="5" class="visuallyhidden" /><label for="star5-5" title="Rocks!">★</label>
+    <input type="radio" id="star5-4" name="rating5" value="4" class="visuallyhidden" /><label for="star5-4" title="Pretty good">★</label>
+    <input type="radio" id="star5-3" name="rating5" value="3" class="visuallyhidden" /><label for="star5-3" title="Meh">★</label>
+    <input type="radio" id="star5-2" name="rating5" value="2" class="visuallyhidden" /><label for="star5-2" title="Kinda bad">★</label>
+    <input type="radio" id="star5-1" name="rating5" value="1" class="visuallyhidden" /><label for="star5-1" title="Sucks big time">★</label>
     </div>
     <br>
-      <a href="https://www.pahangtourism.org.my/index.php/destination/10-tourism-icon/72-pekan" class="btn" target="_blank">Read More</a>
+      <a href="https://www.pahangtourism.org.my/index.php/destination/10-tourism-icon/72-pekan" class="btn5" target="_blank">Read More</a>
   </div>
   <br>
 </div>
+<footer class="footer ">
+    <div class="container-fluid pl-lg-5 pr-lg-3 pl-3">
+        <div class="row">
+            <div class="col-md-2 mb-lg-0 mb-3">
+                    <h4 class="text-uppercase top-bar">ABOUT</h4>
+                <ul class="nav pt-0">
+                    <li>
+                       <a href="./about-malaysia.html" target="_blank"class="underline">About Malaysia</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-lg-0 mb-3">
+                <h4 class="text-uppercase top-bar">States</h4>
+                <ul class="nav pt-0">
+                    <li>
+                        <a href="./NewKL.html" target="_blank"class="underline">
+                            Kuala Lumpur
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./NewPenang.html" target="_blank"class="underline">
+                            Penang
+                        </a>
+                    </li>
+                    <li >
+                        <a href="./Pahang4.html" target="_blank"class="underline">
+                            Pahang
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-lg-0 mb-3">
+                <h4 class="text-uppercase top-bar" style="color: #f7f7f7;cursor: default">States</h4>
+                <ul class="nav pt-0">
+                    <li>
+                        <a href="./NewSabah.html" target="_blank"class="underline">
+                            Sabah
+                        </a>
+                    </li>
+                   
+                    <li >
+                        <a href="./Sarawak5.html" target="_blank"class="underline">
+                            Sarawak
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Malacca3.html" target="_blank"class="underline">
+                            Malacca
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-lg-0 mb-3">
+                    <ol>
+                        <li>
+                            <a href="https://instagram.com/" data-toggle="tooltip" title="Follow Us!" target="_blank">
+                                <img src="images/insta.svg" alt="Instagram" width="35" >
+                                <span> Follow Us! </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/" data-toggle="tooltip" title="Check Us Out!" target="_blank">
+                                <img src="images/facebook.svg" alt="facebook" width="35" >
+                                <span> Check Us Out!</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" data-toggle="tooltip" title="Latest News!" target="_blank">
+                                <img src="images/twitter.svg" alt="twitter" width="35" >
+                                <span> Latest News!</span>
+                            </a>
+                        </li>
+                    </ol>
+            </div>
+            <div class="col-md-4 mb-lg-0 mb-3">
+                <h3>Malaysia <span> Boleh</span></h3>
+                    <div style="height: 80%;">
+                        <div class="vl"></div>
+                    </div>
+                    <small>All Rights Reserved Vix.com &copy; 2019</small>
+                </div>
+    </div>
+</footer>
   </body>
 </html>

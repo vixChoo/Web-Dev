@@ -1,184 +1,216 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Sabah</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-    body,html {
-            height: 100%;
-            max-width: 100%;
-            }
-
-    * {
-    box-sizing: border-box;
-    }
-
-    h2{
-      border-bottom: 1px solid;
-    }
-
-    .bg-image {
-    /* The image used */
-    background-image: url("Sabah images/Sabah.jpg");
-
-    /* Add the blur effect */
-    filter: blur(1px);
-    -webkit-filter: blur(3px);
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-
-    /* Position text in the middle of the page/image */
-    .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.2); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px;
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 50%;
-    padding: 20px;
-    text-align: center;
-    font-style: italic;
-    }
-    /*|||||||||||||||||||*/
-
-    div{
-      padding:50px 100px;
-      width:auto;
-      background: honeydew;
-      margin: auto;
-    }
-
-    /*YOUTUBE video*/
-    .div1{
-      background-image:url("Sabah images/Sabah1.jpg");
-      width:absolute;
-      height:80%;
-      padding:30px;
-      border:1px solid;
+        <title>Sabah</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <style>
+      body,html {
+              height: 100%;
+              max-width: 100%;
+              line-height: 1.2;
+              }
+  
+      * {
+      box-sizing: border-box;
+      }
+  
+      h2{
+        border-bottom: 1px solid;
+        font-size: 1.4rem;
+      }
+      h3{
+        font-size: 1.17em;
+      }
+      /*first image*/
+      .bg-image {
+      /* The image used */
+      background-image: url("KL images/KL.jpg");
+  
+      /* Add the blur effect */
+      filter: blur(1px);
+      -webkit-filter: blur(3px);
+  
+      /* Full height */
+      height: 100%;
+  
+      /* Center and scale the image nicely */
       background-position: center;
       background-repeat: no-repeat;
-      background-size:cover;
-    }
-
-    .div2{
-       width:600px;
-       height:350px;
-       background:white;
-       border: 1px solid;
-       float:left;
-       padding:1px;
+      background-size: cover;
       }
-
-    .div3{
-        width:450px;
-        height:280px;
-        background:white;
-        border: 1px solid;
-        overflow:hidden;
-        opacity:0.8;
-      }
-      /*||||||||||||||||||||||||||||*/
-
-     /* link button*/
-     .button1 {
-        border-radius: 10px;
-        background-color: lightpink;
-        border: none;
-        text-align: center;
-        font-size: 14px;
-        font-style: italic;
-        padding: 10px;
-        width: 150px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-        float:right;
-      }
-
-      .button1 span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-      }
-
-      .button1 span:after {
-        content: '\00bb';
+  
+      /* Position text in the middle of the page/image */
+      .bg-text {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.2); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px;
+        border-radius: 20px;
         position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.3s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        font-style: italic;
       }
-
-      .button1:hover span {
-        padding-right: 25px;
+      /*|||||||||||||||||||*/
+  
+     .layout div{
+        padding:50px 100px;
+        width:auto;
+        background: honeydew;
+        margin:auto;
+        text-align: left;
       }
-
-      .button1:hover span:after {
-        opacity: 1;
-        right: 0;
-      }
-
-      /*||||||||||||||||||||||||||*/
-
-      img {
-        float: left;
-        margin-right: 10px;
-        padding: 5px;
+     
+      /*YOUTUBE video*/
+      .div1{
+        background-image:url("KL images/KL1.jpg");
+        width:100%;
+        height:50%;
+        padding:30px;
+        border: 1px solid;
         border-radius:20px;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
       }
-
-      /* inside the box */
-      .button2 {
-        font-size: 16px;
-        font-style: Arial;
-        background-color:#ffebc7;
-        border-radius: 10px 25px;
-        padding: 5px;
-        display: inline-block;
-        margin-right: 4px;
-        margin-top: 50px;
-        -webkit-transition-duration: 0.2s; /* Safari */
-        transition-duration: 0.2s;
-        max-width: 84%;
-        height: 25%;
+  
+      .div2 {
+         width:600px;
+         height:350px;
+         background:white;
+         border:1px;
+         padding:1px;
+         margin-left:200px;
+       float:left;
         }
-
+  
+      .div3{
+          width:450px;
+          height:280px;
+          background:white;
+          border: 3px solid white;
+          border-radius: 20px 5px;
+          overflow:hidden;
+          opacity: 0.8;
+      float:right;
+      margin-right:350px;
+        }
+  
+        h5{
+            float: right;
+        }
+  
+        /*||||||||||||||||||||||||||||*/
+  
+       /* link button*/
+       .button1 {
+          border-radius: 10px;
+          background-color: lightpink;
+          border: none;
+          text-align: center;
+          font-size: 14px;
+          font-style: italic;
+          padding: 10px;
+          width: 150px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 2px;
+          float:right;
+        }
+  
+        .button1 span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+  
+        .button1 span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.3s;
+        }
+  
+        .button1:hover span {
+          padding-right: 25px;
+        }
+  
+        .button1:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        /*||||||||||||||||||||||||||*/
+      
+      h3{
+      font-style:italic;
+      }
+  
+      .layout img {
+          float: left;
+          margin-right: 10px;
+          border-radius:20px;
+        }
+  
+        /* inside the box */
+        .button2 {
+          font-size: 16px;
+          font-style: Arial;
+          background-color:#ffebc7!important;
+          border-radius: 10px 25px!important;
+          padding: 5px!important;
+          display: inline-block;
+          margin-right: 4px!important;
+          margin-top: 50px!important;
+          /* cursor: pointer; */
+          -webkit-transition-duration: 0.2s; /* Safari */
+          transition-duration: 0.2s;
+          max-width: 84%!important;
+          height: 25%!important;
+        }
+  
         .button2:hover {
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
         }
-
+  
+        /*back to top button*/
         #myBtn {
           position: fixed;
           bottom: 20px;
           right: 20px;
-          border: 20px;
+          border: 15px;
           background-color: #DCDCDC;
           cursor: pointer;
           padding: 15px;
-          border-radius: 100px;
+          border-radius: 1000px;
         }
-
+  
         #myBtn:hover {
           background-color: #A9A9A9;
         }
-
-     </style>
-    </head>
+  
+        .checked {
+          color: orange;
+        }
+  
+       </style>
+     
+        <link rel="stylesheet" href="vix.css">
+      </head>
 
     <body>
       <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -196,7 +228,7 @@
 
           <div class="div1">
             <div class="div2">
-          <iframe width="600" height="350" src="C:\Users\USER\Downloads\Kota Kinabalu - (Sabah, Borneo Malaysia).mp4"> </iframe>
+          <iframe width="600" height="350" src="Sabah images\Kota Kinabalu - (Sabah, Borneo Malaysia).mp4"> </iframe>
           </div>
 
           <div class="div3" style="padding:10px;">
@@ -216,9 +248,15 @@
           </div>
         </div>
 
-    <div>
+    <div class="layout" align="center">
     <div class="button2">
-      <img src="Sabah images/KotaKinabalu.jpg" style="width:40%;height:45%;">
+      <h3 style="float:right;">3.2+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span></h3>
+      <img src="Sabah images/KotaKinabalu.jpg" style="width:36%;height:45%;">
       <h2 id="Kota">Mount Kinabalu</h2>
       Probably the most famous attraction in Sabah is Mount Kinabalu which is a sacred mountain
       located on the outskirts of the Kota Kinabalu.
@@ -234,7 +272,13 @@
 
     <br><br>
     <div class="button2">
-      <img src="Sabah images/MatakingIsland.jpg" style="width:40%;height:42%;">
+      <h3 style="float:right;">4.0+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span></h3>
+      <img src="Sabah images/MatakingIsland.jpg" style="width:36%;height:42%;">
       <h2>Mataking Island</h2>
       Mataking Island is the furthest from Semporna in east coast Sabah where a boat trip takes nearly an hour one way.
       Just stroll around the island to look for your own secluded place. One of the unique things about the
@@ -247,11 +291,18 @@
     </div>
 
     <br><br>
-    <div class="button2">
-      <img src="Sabah images/MabulIsland.jpg" style="width:40%;height:40%;">
+    <div class="button2" style="padding-right:100px;">
+      <h3 style="float:right;">3.0+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+	  </h3>
+      <img src="Sabah images/MabulIsland.jpg" style="width:39.5%;height:40%;">
       <h2>Mabul Island</h2>
       Mabul is a small island off the south-eastern coast of Sabah in Malaysia.
-    	The island has been a fishing village since the 1970s. In the 1990s,
+      The island has been a fishing village since the 1970s. In the 1990s,
       it first became popular to divers due to its proximity to Sipadan island.
       <br><br>
       <img src="KL images/Time.gif" style="width:30px;padding-top:1px;">6am-5:30pm<br>
@@ -263,7 +314,14 @@
 
     <br><br>
     <div class="button2">
-      <img src="Sabah images/TanjungAru.jpg" style="width:40%;height:28%;">
+      <h3 style="float:right;">5.0+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+	  </h3>
+      <img src="Sabah images/TanjungAru.jpg" style="width:35.5%;height:28%;">
       <h2>Tanjung Aru Beach</h2>
       Tanjung Aru is a sub-district of Kota Kinabalu in Sabah, of Malaysia.
     	Its main feature is its beach called Tanjung Aru Beach which stretches to over 2 kilometres long along with new skyscrapers.
@@ -278,14 +336,20 @@
 
     <br><br>
       <div class="button2">
-        <img src="Sabah images/SabahMosque.jpg" style="width:40%;height:70%;">
+        <h3 style="float:right;">2.0+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span></h3>
+        <img src="Sabah images/SabahMosque.jpg" style="width:35.5%;height:70%;">
         <h2>Sabah City Mosque</h2>
         The Kuala Lumpur Tower is a communications tower located in Kuala Lumpur, Malaysia.
         Its construction was completed on 1 March 1995.
         It features an antenna that increases its height to 421 metres and is the 7th tallest freestanding tower in the world.
         The roof of the pod is at 335 metres.
-        <br><br><img src="KL images/location.gif" style="width:30px;">Jalan Pasir, Jalan Teluk Likas, Kampung Likas, 88400 Kota Kinabalu, Sabah.
-        <br><br><img src="KL images/Time.gif" style="width:30px;padding-top:2px;">4am-11:30pm<br>
+        <br><br><br><img src="KL images/location.gif" style="width:28px;">Jalan Pasir, Jalan Teluk Likas, Kampung Likas, 88400 Kota Kinabalu, Sabah.
+        <br>
         <nav><a href="http://www.sabahtourism.com/destination/city-mosque/">
         <button class="button1"><span>Read More</span></button>
         </a>
@@ -315,5 +379,89 @@
       </script>
 
   </div>
+  
+<footer class="footer ">
+    <div class="container-fluid pl-lg-5 pr-lg-3 pl-3">
+        <div class="row">
+            <div class="col-md-2 mb-lg-0 mb-3">
+                    <h4 class="text-uppercase top-bar">ABOUT</h4>
+                <ul class="nav pt-0">
+                    <li>
+                       <a href="./about-malaysia.html" target="_blank"class="underline">About Malaysia</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-lg-0 mb-3">
+                <h4 class="text-uppercase top-bar">States</h4>
+                <ul class="nav pt-0">
+                    <li>
+                        <a href="./NewKL.html" target="_blank"class="underline">
+                            Kuala Lumpur
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./NewPenang.html" target="_blank"class="underline">
+                            Penang
+                        </a>
+                    </li>
+                    <li >
+                        <a href="./Pahang4.html" target="_blank"class="underline">
+                            Pahang
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-lg-0 mb-3">
+                <h4 class="text-uppercase top-bar" style="color: #f7f7f7;cursor: default">States</h4>
+                <ul class="nav pt-0">
+                    <li>
+                        <a href="./NewSabah.html" target="_blank"class="underline">
+                            Sabah
+                        </a>
+                    </li>
+                   
+                    <li >
+                        <a href="./Sarawak5.html" target="_blank"class="underline">
+                            Sarawak
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Malacca3.html" target="_blank"class="underline">
+                            Malacca
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-lg-0 mb-3">
+                    <ol>
+                        <li>
+                            <a href="https://instagram.com/" data-toggle="tooltip" title="Follow Us!" target="_blank">
+                                <img src="images/insta.svg" alt="Instagram" width="35" >
+                                <span> Follow Us! </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/" data-toggle="tooltip" title="Check Us Out!" target="_blank">
+                                <img src="images/facebook.svg" alt="facebook" width="35" >
+                                <span> Check Us Out!</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" data-toggle="tooltip" title="Latest News!" target="_blank">
+                                <img src="images/twitter.svg" alt="twitter" width="35" >
+                                <span> Latest News!</span>
+                            </a>
+                        </li>
+                    </ol>
+            </div>
+            <div class="col-md-4 mb-lg-0 mb-3">
+                <h3>Malaysia <span> Boleh</span></h3>
+                    <div style="height: 80%;">
+                        <div class="vl"></div>
+                    </div>
+                    <small>All Rights Reserved Vix.com &copy; 2019</small>
+                </div>
+    </div>
+</footer>
   </body>
   </html>

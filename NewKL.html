@@ -3,10 +3,17 @@
     <head>
       <title>Kuala Lumpur</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Font Awesome Icon Library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="bootstrap.css">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
       <style>
     body,html {
             height: 100%;
             max-width: 100%;
+            line-height: 1.2;
             }
 
     * {
@@ -15,8 +22,11 @@
 
     h2{
       border-bottom: 1px solid;
+      font-size: 1.4rem;
     }
-
+    h3{
+      font-size: 1.17em;
+    }
     /*first image*/
     .bg-image {
     /* The image used */
@@ -55,21 +65,23 @@
     }
     /*|||||||||||||||||||*/
 
-    div{
+   .layout div{
       padding:50px 100px;
       width:auto;
       background: honeydew;
-      margin: auto;
+      margin:auto;
+      text-align: left;
     }
-
+   
     /*YOUTUBE video*/
     .div1{
       background-image:url("KL images/KL1.jpg");
-      width:absolute;
-      height:80%;
+      width:100%;
+      height:50%;
       padding:30px;
       border: 1px solid;
-      background-position: center;
+      border-radius:20px;
+      background-position:center;
       background-repeat: no-repeat;
       background-size:cover;
     }
@@ -80,16 +92,20 @@
        background:white;
        border:1px;
        padding:1px;
-       float:left;
+       margin-left:200px;
+	   float:left;
       }
 
     .div3{
         width:450px;
-        height:260px;
+        height:280px;
         background:white;
-        border: 1px solid navy;
+        border: 3px solid white;
+        border-radius: 20px 5px;
         overflow:hidden;
         opacity: 0.8;
+		float:right;
+		margin-right:350px;
       }
 
       h5{
@@ -139,8 +155,12 @@
         right: 0;
       }
       /*||||||||||||||||||||||||||*/
+	  
+	  h3{
+		font-style:italic;
+		}
 
-      img {
+    .layout img {
         float: left;
         margin-right: 10px;
         border-radius:20px;
@@ -150,44 +170,51 @@
       .button2 {
         font-size: 16px;
         font-style: Arial;
-        background-color:#ffebc7;
-        border-radius: 10px 25px;
-        padding: 5px;
+        background-color:#ffebc7!important;
+        border-radius: 10px 25px!important;
+        padding: 5px!important;
         display: inline-block;
-        margin-right: 4px;
-        margin-top: 50px;
+        margin-right: 4px!important;
+        margin-top: 50px!important;
         /* cursor: pointer; */
         -webkit-transition-duration: 0.2s; /* Safari */
         transition-duration: 0.2s;
-        max-width: 84%;
-        height: 25%;
+        max-width: 84%!important;
+        height: 25%!important;
       }
 
       .button2:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
       }
 
+      /*back to top button*/
       #myBtn {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        border: 20px;
+        border: 15px;
         background-color: #DCDCDC;
         cursor: pointer;
         padding: 15px;
-        border-radius: 100px;
+        border-radius: 1000px;
       }
 
       #myBtn:hover {
         background-color: #A9A9A9;
       }
 
+      .checked {
+        color: orange;
+      }
+
      </style>
+   
+      <link rel="stylesheet" href="vix.css">
     </head>
 
     <body>
       <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <img src="KL images/backtotop.gif" style="width:25px;"></button>
+      <img src="KL images/backtotop.gif" style="width:20px;"></button>
     <div class="bg-image"></div>
     <div class="bg-text">
     <h1 style="border-bottom:1px solid">Kuala Lumpur </h1>
@@ -199,7 +226,7 @@
     <br>
           <div class="div1">
             <div class="div2">
-          <iframe width="600" height="350" src="C:\Users\USER\Downloads\Greater Kuala Lumpur  Development - Latest June 2019.mp4"> </iframe>
+          <iframe width="600" height="350" src="KL images/Greater Kuala Lumpur  Development - Latest June 2019.mp4"></iframe>
           </div>
 
           <div class="div3" style="padding:10px;">
@@ -218,9 +245,14 @@
           </div>
           </div>
 
-      <div>
+<div class="layout" align="center">
       <div class="button2">
-        <h5>4.75(100+)</h5>
+        <h3 style="float:right;">4.1+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span></h3>
       <img src="KL images/KLCC1.jpg" style="width:40%;height:60%;padding:10px;">
       <h2 id="KLCC">KLCC</h2>
       Just as its name suggests, there is only one way to describe KLCC: the heart of Kuala Lumpur.
@@ -239,6 +271,13 @@
 
     <br><br>
     <div class="button2">
+      <h3 style="float:right;">5.0+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      </h3>
       <img src="KL images/Pavilion.jpg" style="width:40%;height:70%;padding:10px;">
       <h2>Pavilion</h2>
       Pavilion Kuala Lumpur is an award-winning, premier shopping destination houses eight
@@ -255,6 +294,12 @@
 
     <br><br>
     <div class="button2">
+      <h3 style="float:right;">5.0+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></h3>
       <img src="KL images/BatuCaves.jpg" style="width:40%;height:40%;padding:10px;">
       <h2>Batu Caves</h2>
       Batu Caves is a limestone hill that has a series of caves and cave temples in Gombak, Selangor, Malaysia.
@@ -270,6 +315,12 @@
 
     <br><br>
     <div class="button2">
+      <h3 style="float:right;">3.2+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span></h3>
       <img src="KL images/JlnPetaling.jpg" style="width:40%;height:30%;padding:10px;">
       <h2>Chinatown</h2>
       Kuala Lumpur Chinatown is a must when visiting this big, bustling city.
@@ -288,6 +339,12 @@
 
     <br><br>
     <div class="button2">
+      <h3 style="float:right;">4.0+
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span></h3>
       <img src="KL images/KLTower.jpg" style="width:40%;height:45%;padding:10px;">
       <h2>Menara Kuala Lumpur</h2>
       The Kuala Lumpur Tower is a communications tower located in Kuala Lumpur, Malaysia.
@@ -322,9 +379,92 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-      </script>
+    </script>
 
 
 </div>
+<footer class="footer ">
+        <div class="container-fluid pl-lg-5 pr-lg-3 pl-3">
+            <div class="row">
+                <div class="col-md-2 mb-lg-0 mb-3">
+                        <h4 class="text-uppercase top-bar">ABOUT</h4>
+                    <ul class="nav pt-0">
+                        <li>
+                           <a href="./about-malaysia.html" target="_blank"class="underline">About Malaysia</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-lg-0 mb-3">
+                    <h4 class="text-uppercase top-bar">States</h4>
+                    <ul class="nav pt-0">
+                        <li>
+                            <a href="./NewKL.html" target="_blank"class="underline">
+                                Kuala Lumpur
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./NewPenang.html" target="_blank"class="underline">
+                                Penang
+                            </a>
+                        </li>
+                        <li >
+                            <a href="./Pahang4.html" target="_blank"class="underline">
+                                Pahang
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-lg-0 mb-3">
+                    <h4 class="text-uppercase top-bar" style="color: #f7f7f7;cursor: default">States</h4>
+                    <ul class="nav pt-0">
+                        <li>
+                            <a href="./NewSabah.html" target="_blank"class="underline">
+                                Sabah
+                            </a>
+                        </li>
+                       
+                        <li >
+                            <a href="./Sarawak5.html" target="_blank"class="underline">
+                                Sarawak
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./Malacca3.html" target="_blank"class="underline">
+                                Malacca
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-lg-0 mb-3">
+                        <ol>
+                            <li>
+                                <a href="https://instagram.com/" data-toggle="tooltip" title="Follow Us!" target="_blank">
+                                    <img src="images/insta.svg" alt="Instagram" width="35" >
+                                    <span> Follow Us! </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com/" data-toggle="tooltip" title="Check Us Out!" target="_blank">
+                                    <img src="images/facebook.svg" alt="facebook" width="35" >
+                                    <span> Check Us Out!</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" data-toggle="tooltip" title="Latest News!" target="_blank">
+                                    <img src="images/twitter.svg" alt="twitter" width="35" >
+                                    <span> Latest News!</span>
+                                </a>
+                            </li>
+                        </ol>
+                </div>
+                <div class="col-md-4 mb-lg-0 mb-3">
+                    <h3>Malaysia <span> Boleh</span></h3>
+                        <div style="height: 80%;">
+                            <div class="vl"></div>
+                        </div>
+                        <small>All Rights Reserved Vix.com &copy; 2019</small>
+                    </div>
+        </div>
+    </footer>
 </body>
 </html>

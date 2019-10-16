@@ -6,13 +6,15 @@
     <title>Sarawak</title>
   </head>
   <style media="screen">
-
+  /*body{
+    background-color: #8ea3bd;
+  }*/
   *{
     box-sizing: border-box;
   }
     .parallax
   {
-    background-image: url("Slider2.jpg");
+    background-image: url("Sarawak Images/Slider2.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -71,6 +73,7 @@
   box-shadow: 0 1px 2px rgba(0,0,0,.15);
   border-radius: 15px;
   padding: 5px;
+  /*background-color: #E7DFDD;*/
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
@@ -79,7 +82,7 @@
 {
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
-.btn
+.btn4
 {
   font-family: arial;
   text-transform: uppercase;
@@ -98,10 +101,11 @@
   overflow: hidden;
   background: transparent;
   transition: .3s;
-  left:50px;
+  left:750px;
+  bottom:125px;
 
 }
-.btn:before
+.btn4:before
 {
   content:"";
   width: 100%;
@@ -114,7 +118,7 @@
   z-index: -1;
   transition: .3s;
 }
-.btn:after
+.btn4:after
 {
   content:"";
   width: 100%;
@@ -127,15 +131,15 @@
   transition: .3s;
   transition-delay: .2s;
 }
-.btn:hover
+.btn4:hover
 {
   color: #fff;
 }
-.btn:hover:before
+.btn4:hover:before
 {
   top:0;
 }
-.btn:hover:after
+.btn4:hover:after
 {
   top:0;
 }
@@ -149,7 +153,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(NatureReserve.jpg);
+background:url('Sarawak Images/NatureReserve.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -157,7 +161,7 @@ padding:10px;
 background-repeat: no-repeat;
 }
 .hover-img1:hover{
-background:url(NatureReserve2.jpg);
+background:url('Sarawak Images/NatureReserve2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -171,7 +175,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(NationalPark.jpg);
+background:url('Sarawak Images/NationalPark.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -180,7 +184,7 @@ background-repeat: no-repeat;
 
 }
 .hover-img2:hover{
-background:url(NationalPark2.jpg);
+background:url('Sarawak Images/NationalPark2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -194,7 +198,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(NiahCaves3.jpg);
+background:url('Sarawak Images/NiahCaves3.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -202,7 +206,7 @@ padding:10px;
 background-repeat: no-repeat;
 }
 .hover-img3:hover{
-background:url(NiahCaves2.jpg);
+background:url('Sarawak Images/NiahCaves2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -216,7 +220,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(MuluCaves.jpg);
+background:url('Sarawak Images/MuluCaves.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -224,7 +228,7 @@ padding:10px;
 background-repeat: no-repeat;
 }
 .hover-img4:hover{
-background:url(MuluCaves2.jpg);
+background:url('Sarawak Images/MuluCaves2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -238,7 +242,7 @@ height: 350px;
 -ms-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 transition: all 1s ease-in-out;
-background:url(CulturalVillage.jpg);
+background:url('Sarawak Images/CulturalVillage.jpg');
 -webkit-transform:rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 border-radius: 15px;
@@ -246,7 +250,7 @@ padding:10px;
 background-repeat: no-repeat;
 }
 .hover-img5:hover{
-background:url(CulturalVillage2.jpg);
+background:url('Sarawak Images/CulturalVillage2.jpg');
 background-repeat: no-repeat;
 border-radius: 15px;
 }
@@ -263,56 +267,523 @@ border-radius: 15px;
 {
   float: right;
 }
-body, html {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: #f5f8fa;
-    color: #292F33;
-    font-size: 12px;
-}
 
   .container {
     height:100px;
     display: flex;
-    /*flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
     float: left;
 }
-
-.heart {
-    background-image: url('https://abs.twimg.com/a/1474649078/img/animations/web_heart_animation.png');
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: 2900%;
-    cursor: pointer;
-    display: block;
-    width: 100px;
-    height: 100px;
+  #rating1 label{
+  text-shadow: 0px 0px 5px;
 }
-    .heart:active {
-        animation: heartAnim .8s infinite steps(28) forwards;
 
-    }
-
-    .heart:hover,
-    .heart:focus,
-    .heart:visited,
-    .heart::after{
-        background-position: right top;
-    }
-
-
-@keyframes heartAnim {
-    from {
-        background-position: left top;
-    }
-    to {
-        background-position: right top;
-    }
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
 }
-  </style>
+#rating1 label:after{
+  content: "★";
+  color: inherit;
+  -webkit-transform: scale(4);
+  position: absolute;
+  z-index: 4;
+  left: 0px;
+  transition: all .4s;
+  opacity: 0;
+  color: inherit;
+  visibility: hidden;
+
+}
+
+#rating1 input:checked + label:after{
+  visibility: visible;
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+
+#rating1 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating1 label{
+  font-family: "icomoon";
+  font-size: 2em;
+  position: relative;
+  cursor: pointer;
+  color: #DFE3E4;
+}
+#rating1 input:checked ~ label:before{
+  opacity: 1;
+}
+#rating1:hover input ~ label:before{
+  opacity: 0;
+}
+
+#rating1 input + label:before{
+  content: "\2605";
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity .3s ease-in-out, color .3s ease-in-out;
+  backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating1 input + label:hover:before,
+#rating1 input + label:hover ~ label:before
+{
+  opacity: 1;
+}
+#rating1 input + label:nth-of-type(1):after,
+#rating1 input + label:nth-of-type(1):before,
+#rating1 input +  label:nth-of-type(1):hover:before,
+#rating1 input + label:nth-of-type(1):hover ~ label:before,
+#rating1 input:nth-of-type(1):checked ~ label:before{
+  color: #2ecc71;
+}
+#rating1 input + label:nth-of-type(2):after,
+#rating1 input + label:nth-of-type(2):before,
+#rating1 input + label:nth-of-type(2):hover:before,
+#rating1 input + label:nth-of-type(2):hover ~ label:before,
+#rating1 input:nth-of-type(2):checked ~ label:before{
+  color: #f1c40f;
+}
+#rating1 input + label:nth-of-type(3):after,
+#rating1 input + label:nth-of-type(3):before,
+#rating1 input + label:nth-of-type(3):hover:before,
+#rating1 input + label:nth-of-type(3):hover ~ label:before,
+#rating1 input:nth-of-type(3):checked ~ label:before{
+  color: #F39C12;
+}
+#rating1 input + label:nth-of-type(4):after,
+#rating1 input + label:nth-of-type(4):before,
+#rating1 input + label:nth-of-type(4):hover:before,
+#rating1 input + label:nth-of-type(4):hover ~ label:before,
+#rating1 input:nth-of-type(4):checked ~ label:before{
+  color: #e74c3c;
+}
+
+#rating1 input + label:nth-of-type(5):after,
+#rating1 input + label:nth-of-type(5):before,
+#rating1 label:nth-of-type(5):hover:before,
+#rating1 input:nth-of-type(5):checked ~ label:before{
+  color: #d35400;
+}
+
+#rating1 label:nth-of-type(5):hover:before{
+  color: #d35400 !important;
+}
+#rating2 label{
+text-shadow: 0px 0px 5px;
+}
+
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating2 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
+
+}
+
+#rating2 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
+
+#rating2 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating2 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating2 input:checked ~ label:before{
+opacity: 1;
+}
+#rating2:hover input ~ label:before{
+opacity: 0;
+}
+
+#rating2 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating2 input + label:hover:before,
+#rating2 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating2 input + label:nth-of-type(1):after,
+#rating2 input + label:nth-of-type(1):before,
+#rating2 input +  label:nth-of-type(1):hover:before,
+#rating2 input + label:nth-of-type(1):hover ~ label:before,
+#rating2 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating2 input + label:nth-of-type(2):after,
+#rating2 input + label:nth-of-type(2):before,
+#rating2 input + label:nth-of-type(2):hover:before,
+#rating2 input + label:nth-of-type(2):hover ~ label:before,
+#rating2 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating2 input + label:nth-of-type(3):after,
+#rating2 input + label:nth-of-type(3):before,
+#rating2 input + label:nth-of-type(3):hover:before,
+#rating2 input + label:nth-of-type(3):hover ~ label:before,
+#rating2 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating2 input + label:nth-of-type(4):after,
+#rating2 input + label:nth-of-type(4):before,
+#rating2 input + label:nth-of-type(4):hover:before,
+#rating2 input + label:nth-of-type(4):hover ~ label:before,
+#rating2 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating2 input + label:nth-of-type(5):after,
+#rating2 input + label:nth-of-type(5):before,
+#rating2 label:nth-of-type(5):hover:before,
+#rating2 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating2 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
+}
+#rating3 label{
+text-shadow: 0px 0px 5px;
+}
+
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating3 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
+
+}
+
+#rating3 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
+
+#rating3 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating3 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating3 input:checked ~ label:before{
+opacity: 1;
+}
+#rating3:hover input ~ label:before{
+opacity: 0;
+}
+
+#rating3 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating3 input + label:hover:before,
+#rating3 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating3 input + label:nth-of-type(1):after,
+#rating3 input + label:nth-of-type(1):before,
+#rating3 input +  label:nth-of-type(1):hover:before,
+#rating3 input + label:nth-of-type(1):hover ~ label:before,
+#rating3 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating3 input + label:nth-of-type(2):after,
+#rating3 input + label:nth-of-type(2):before,
+#rating3 input + label:nth-of-type(2):hover:before,
+#rating3 input + label:nth-of-type(2):hover ~ label:before,
+#rating3 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating3 input + label:nth-of-type(3):after,
+#rating3 input + label:nth-of-type(3):before,
+#rating3 input + label:nth-of-type(3):hover:before,
+#rating3 input + label:nth-of-type(3):hover ~ label:before,
+#rating3 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating3 input + label:nth-of-type(4):after,
+#rating3 input + label:nth-of-type(4):before,
+#rating3 input + label:nth-of-type(4):hover:before,
+#rating3 input + label:nth-of-type(4):hover ~ label:before,
+#rating3 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating3 input + label:nth-of-type(5):after,
+#rating3 input + label:nth-of-type(5):before,
+#rating3 label:nth-of-type(5):hover:before,
+#rating3 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating3 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
+}
+#rating4 label{
+text-shadow: 0px 0px 5px;
+}
+
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating4 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
+
+}
+
+#rating4 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
+
+#rating4 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating4 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating4 input:checked ~ label:before{
+opacity: 1;
+}
+#rating4:hover input ~ label:before{
+opacity: 0;
+}
+
+#rating4 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating4 input + label:hover:before,
+#rating4 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating4 input + label:nth-of-type(1):after,
+#rating4 input + label:nth-of-type(1):before,
+#rating4 input +  label:nth-of-type(1):hover:before,
+#rating4 input + label:nth-of-type(1):hover ~ label:before,
+#rating4 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating4 input + label:nth-of-type(2):after,
+#rating4 input + label:nth-of-type(2):before,
+#rating4 input + label:nth-of-type(2):hover:before,
+#rating4 input + label:nth-of-type(2):hover ~ label:before,
+#rating4 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating4 input + label:nth-of-type(3):after,
+#rating4 input + label:nth-of-type(3):before,
+#rating4 input + label:nth-of-type(3):hover:before,
+#rating4 input + label:nth-of-type(3):hover ~ label:before,
+#rating4 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating4 input + label:nth-of-type(4):after,
+#rating4 input + label:nth-of-type(4):before,
+#rating4 input + label:nth-of-type(4):hover:before,
+#rating4 input + label:nth-of-type(4):hover ~ label:before,
+#rating4 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating4 input + label:nth-of-type(5):after,
+#rating4 input + label:nth-of-type(5):before,
+#rating4 label:nth-of-type(5):hover:before,
+#rating4 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating4 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
+}
+#rating5 label{
+text-shadow: 0px 0px 5px;
+}
+
+.visuallyhidden{
+position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+#rating5 label:after{
+content: "★";
+color: inherit;
+-webkit-transform: scale(4);
+position: absolute;
+z-index: 4;
+left: 0px;
+transition: all .4s;
+opacity: 0;
+color: inherit;
+visibility: hidden;
+
+}
+
+#rating5 input:checked + label:after{
+visibility: visible;
+-webkit-transform: scale(1);
+opacity: 1;
+}
+
+#rating5 {
+unicode-bidi: bidi-override;
+direction: rtl;
+width:  250px;
+}
+
+#rating5 label{
+font-family: "icomoon";
+font-size: 2em;
+position: relative;
+cursor: pointer;
+color: #DFE3E4;
+}
+#rating5 input:checked ~ label:before{
+opacity: 1;
+}
+#rating5:hover input ~ label:before{
+opacity: 0;
+}
+
+#rating5 input + label:before{
+content: "\2605";
+position: absolute;
+right: 0;
+opacity: 0;
+transition: opacity .3s ease-in-out, color .3s ease-in-out;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden; /* Chrome and Safari */
+-moz-backface-visibility:hidden; /* Firefox */
+-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+#rating5 input + label:hover:before,
+#rating5 input + label:hover ~ label:before
+{
+opacity: 1;
+}
+#rating5 input + label:nth-of-type(1):after,
+#rating5 input + label:nth-of-type(1):before,
+#rating5 input +  label:nth-of-type(1):hover:before,
+#rating5 input + label:nth-of-type(1):hover ~ label:before,
+#rating5 input:nth-of-type(1):checked ~ label:before{
+color: #2ecc71;
+}
+#rating5 input + label:nth-of-type(2):after,
+#rating5 input + label:nth-of-type(2):before,
+#rating5 input + label:nth-of-type(2):hover:before,
+#rating5 input + label:nth-of-type(2):hover ~ label:before,
+#rating5 input:nth-of-type(2):checked ~ label:before{
+color: #f1c40f;
+}
+#rating5 input + label:nth-of-type(3):after,
+#rating5 input + label:nth-of-type(3):before,
+#rating5 input + label:nth-of-type(3):hover:before,
+#rating5 input + label:nth-of-type(3):hover ~ label:before,
+#rating5 input:nth-of-type(3):checked ~ label:before{
+color: #F39C12;
+}
+#rating5 input + label:nth-of-type(4):after,
+#rating5 input + label:nth-of-type(4):before,
+#rating5 input + label:nth-of-type(4):hover:before,
+#rating5 input + label:nth-of-type(4):hover ~ label:before,
+#rating5 input:nth-of-type(4):checked ~ label:before{
+color: #e74c3c;
+}
+
+#rating5 input + label:nth-of-type(5):after,
+#rating5 input + label:nth-of-type(5):before,
+#rating5 label:nth-of-type(5):hover:before,
+#rating5 input:nth-of-type(5):checked ~ label:before{
+color: #d35400;
+}
+
+#rating5 label:nth-of-type(5):hover:before{
+color: #d35400 !important;
+}
+</style>
   <body>
     <div class="parallax">
       <div class="text">
@@ -325,7 +796,7 @@ body, html {
       </div>
     </div>
   <div class="video">
-      <iframe class="iframe1" width="560" height="315" src="Sarawak... More To Discover.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      <iframe class="iframe1" width="560" height="315" src="Sarawak Images/Sarawak... More To Discover.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
       <h2><i>Sarawak...More To Discover</i> Credit: Sarawak Tourism Brand</h2>
   </div>
@@ -342,17 +813,21 @@ body, html {
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.497797834254!2d110.3144962!3d1.4016855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d53de6386e70ad7!2sSemenggoh%20Nature%20Reserve%2C%20Siburan%2C%20Sarawak.!5e0!3m2!1sen!2smy!4v1570517489334!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
   <p>
-  Working Hours:
-  Morning:8am-10am
-  Afternoon:2pm-4pm.
+  <div>
+    <img src="Sarawak Images/clock.gif" alt="" style="width:60px;height:40px;">
+    Morning:8am-10am
+    Afternoon:2pm-4pm.
+  </div>
   </p>
-  <div class="container">
-  <span class="heart"></span>
+  <div id="rating1">
+  <input type="radio" id="star1-5" name="rating" value="5" class="visuallyhidden" /><label for="star1-5" title="Rocks!">★</label>
+  <input type="radio" id="star1-4" name="rating" value="4" class="visuallyhidden" /><label for="star1-4" title="Pretty good">★</label>
+  <input type="radio" id="star1-3" name="rating" value="3" class="visuallyhidden" /><label for="star1-3" title="Meh">★</label>
+  <input type="radio" id="star1-2" name="rating" value="2" class="visuallyhidden" /><label for="star1-2" title="Kinda bad">★</label>
+  <input type="radio" id="star1-1" name="rating" value="1" class="visuallyhidden" /><label for="star1-1" title="Sucks big time">★</label>
   </div>
   <br>
-  <br>
-    <a href="https://semenggoh.my/" class="btn" target="_blank">Read More</a>
-
+    <a href="https://semenggoh.my/" class="btn4" target="_blank">Read More</a>
     </div>
     <br>
   <div class="box">
@@ -365,14 +840,20 @@ body, html {
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.0276430117015!2d110.46447801426564!3d1.7166666987482566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fa532cb6e56807%3A0x5abbf314c5effda6!2sBako%20National%20Park!5e0!3m2!1sen!2smy!4v1570524995950!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
     <p>
-      Working Hours: 8am-5pm.
+      <div>
+      <img src="Sarawak Images/clock.gif" alt="" style="width:60px;height:40px;">
+       Everyday: 8am-5pm.
+     </div>
     </p>
-    <div class="container">
-    <span class="heart"></span>
+    <div id="rating2">
+    <input type="radio" id="star2-5" name="rating2" value="5" class="visuallyhidden" /><label for="star2-5" title="Rocks!">★</label>
+    <input type="radio" id="star2-4" name="rating2" value="4" class="visuallyhidden" /><label for="star2-4" title="Pretty good">★</label>
+    <input type="radio" id="star2-3" name="rating2" value="3" class="visuallyhidden" /><label for="star2-3" title="Meh">★</label>
+    <input type="radio" id="star2-2" name="rating2" value="2" class="visuallyhidden" /><label for="star2-2" title="Kinda bad">★</label>
+    <input type="radio" id="star2-1" name="rating2" value="1" class="visuallyhidden" /><label for="star2-1" title="Sucks big time">★</label>
     </div>
     <br>
-    <br>
-    <a href="https://www.sarawakforestry.com/" class="btn" target="_blank">Read More</a>
+    <a href="https://www.sarawakforestry.com/" class="btn4" target="_blank">Read More</a>
   </div>
   <br>
     <div class="box">
@@ -386,14 +867,20 @@ body, html {
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.934362882758!2d113.75980411436137!3d3.8242380972180894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x321ec206af7cb5d1%3A0xdf76b59fb36292d3!2sGua%20Niah%20(Niah%20Caves)%20Entrance%2C%20Niah%2C%20Sarawak.!5e0!3m2!1sen!2smy!4v1570525099015!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
     <p>
-      Working Hours:8am-5pm.
+      <div>
+      <img src="Sarawak Images/clock.gif" alt="" style="width:60px;height:40px;">
+      Everday:8am-5pm.
+    </div>
     </p>
-    <div class="container">
-    <span class="heart"></span>
+    <div id="rating3">
+    <input type="radio" id="star3-5" name="rating3" value="5" class="visuallyhidden" /><label for="star3-5" title="Rocks!">★</label>
+    <input type="radio" id="star3-4" name="rating3" value="4" class="visuallyhidden" /><label for="star3-4" title="Pretty good">★</label>
+    <input type="radio" id="star3-3" name="rating3" value="3" class="visuallyhidden" /><label for="star3-3" title="Meh">★</label>
+    <input type="radio" id="star3-2" name="rating3" value="2" class="visuallyhidden" /><label for="star3-2" title="Kinda bad">★</label>
+    <input type="radio" id="star3-1" name="rating3" value="1" class="visuallyhidden" /><label for="star3-1" title="Sucks big time">★</label>
     </div>
     <br>
-    <br>
-      <a href="https://www.sarawakforestry.com/parks-and-reserves/niah-national-park/" class="btn" target="_blank">Read More</a>
+      <a href="https://www.sarawakforestry.com/parks-and-reserves/niah-national-park/" class="btn4" target="_blank">Read More</a>
   </div>
   <br>
   <div class="box">
@@ -406,45 +893,50 @@ body, html {
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509485.6339151134!2d114.05975752516787!3d3.9466984027957555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3218fe9cf9c2f1bf%3A0x8f32e554e078f1b2!2sMulu%20National%20Park!5e0!3m2!1sen!2smy!4v1570525150524!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
     </iframe>
     <p>
-      Working Hours: 8am-5pm.
-    </p>
-    <div class="container">
-    <span class="heart"></span>
+      <div>
+        <img src="Sarawak Images/clock.gif" alt="" style="width:60px;height:40px;">
+        Everyday: 8am - 5pm.
+      </div>
+       </p>
+    <div id="rating4">
+    <input type="radio" id="star4-5" name="rating4" value="5" class="visuallyhidden" /><label for="star4-5" title="Rocks!">★</label>
+    <input type="radio" id="star4-4" name="rating4" value="4" class="visuallyhidden" /><label for="star4-4" title="Pretty good">★</label>
+    <input type="radio" id="star4-3" name="rating4" value="3" class="visuallyhidden" /><label for="star4-3" title="Meh">★</label>
+    <input type="radio" id="star4-2" name="rating4" value="2" class="visuallyhidden" /><label for="star4-2" title="Kinda bad">★</label>
+    <input type="radio" id="star4-1" name="rating4" value="1" class="visuallyhidden" /><label for="star4-1" title="Sucks big time">★</label>
     </div>
     <br>
-    <br>
-      <a href="https://mulupark.com/" class="btn" target="_blank">Read More</a>
+      <a href="https://mulupark.com/" class="btn4" target="_blank">Read More</a>
   </div>
   <br>
   <div class="box">
     <div class="hover-img5">
-
     </div>
     <h3>Cultural Village</h3>
     <p>
       Sarawak Cultural Village is an award-winning Living Museum that spans across 17-acres of land just across from Damai Beach Resort and Hotels. Experience Sarawak in Half-a-day at Sarawak Cultural Village and learn about the local culture and lifestyles of the various ethnic groups in Sarawak.
     </p>
     <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.9590662142436!2d110.31427151435588!3d1.7492315987245373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31faff9c78be2e59%3A0x8b3ff59aed592453!2sSarawak%20Cultural%20Village!5e0!3m2!1sen!2smy!4v1570525199675!5m2!1sen!2smy" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="">
-  </iframe>
+    </iframe>
     <p>
-      Working Hours: 9am-5pm.
+      <div>
+        <img src="Sarawak Images/clock.gif" alt="" style="width:60px;height:40px;">
+        Everyday :9am-5pm.
+      </div>
     </p>
-    <div class="container">
-    <span class="heart"></span>
+    <div id="rating5">
+    <input type="radio" id="star5-5" name="rating5" value="5" class="visuallyhidden" /><label for="star5-5" title="Rocks!">★</label>
+    <input type="radio" id="star5-4" name="rating5" value="4" class="visuallyhidden" /><label for="star5-4" title="Pretty good">★</label>
+    <input type="radio" id="star5-3" name="rating5" value="3" class="visuallyhidden" /><label for="star5-3" title="Meh">★</label>
+    <input type="radio" id="star5-2" name="rating5" value="2" class="visuallyhidden" /><label for="star5-2" title="Kinda bad">★</label>
+    <input type="radio" id="star5-1" name="rating5" value="1" class="visuallyhidden" /><label for="star5-1" title="Sucks big time">★</label>
     </div>
     <br>
-    <br>
-      <a href="https://scv.com.my/" class="btn" target="_blank">Read More</a>
+      <a href="https://scv.com.my/" class="btn4" target="_blank">Read More</a>
   </div>
-  <br>
+    <br>
 </div>
+
 </div>
-<script type="text/javascript">
-document
-    .querySelector('.heart')
-    .addEventListener('click', ($event) => {
-        $event.target.classList.toggle('on');
-    })
-</script>
   </body>
 </html>

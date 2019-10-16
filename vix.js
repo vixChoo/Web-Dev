@@ -49,7 +49,7 @@ let slideIndex = 1;
 // Autoplay slideshow
 
 let msIndex = 0;
-carousel();
+
 
 function carousel() {
   let x = document.getElementsByClassName("slide-img");
